@@ -25,7 +25,6 @@ profesjonalną firmą badawczą działającą na terenie całego kraju." widthEl
         <FeedbackMail/>
         <Footer/>
         </>
-        
     )
 }
 export default About
