@@ -7,7 +7,7 @@ import statusUp from '../images/icon/status-up.svg'
 import trade from '../images/icon/trade.svg'
 import slider from '../images/slider.jpg'
 import slider2 from '../images/slider2.jpg'
-const OFirma = () => {
+const ToFirma = () => {
     return (
         <section className="ofirma">
             <Container>
@@ -90,4 +90,4 @@ const OFirma = () => {
         </section>
     )
 }
-export default OFirma
+export default ToFirma
