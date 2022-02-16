@@ -1,0 +1,73 @@
+.ofirma {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.ofirma__push {
+  margin-bottom: 16px;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-item {
+      &-head {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 16px;
+        width: 526px;
+        color: #4c3c90;
+        &-span {
+          font-weight: 800;
+        }
+      }
+      &-text {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: justify;
+        margin-top: 48px;
+        width: 526px;
+        color: #4c3c90;
+        &-span {
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
+.ofirma__text {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: justify;
+  margin-bottom: 24px;
+  color: #4c3c90;
+  &-span {
+    font-weight: 800;
+  }
+}
+.ofirma__list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-bottom: 30px;
+  &-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    &-text {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      color: #4c3c90;
+    }
+  }
+}

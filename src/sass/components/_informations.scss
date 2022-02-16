@@ -1,0 +1,90 @@
+.informations {
+  padding-top: 97px;
+  padding-bottom: 97px;
+}
+.informations__offer {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    &-item:last-child {
+      margin-top: 45px;
+    }
+  }
+  &-head {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #4c3c90;
+    margin-top: 16px;
+    max-width: 500px;
+    &-span {
+      font-weight: 800;
+    }
+  }
+  &-text {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    opacity: 0.75;
+    margin-top: 24px;
+    max-width: 324px;
+  }
+  &-buttons {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+  }
+}
+.informations__reference {
+  margin-top: 140px;
+  &-head {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    color: #4c3c90;
+    margin-top: 16px;
+  }
+  &-list {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    overflow-x: hidden;
+    &-item {
+      background: #edebf4;
+      padding: 32px;
+      min-width: 400px;
+      &-img {
+        margin-bottom: 15px;
+      }
+      &-head {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: -0.02em;
+        margin-bottom: 20px;
+      }
+      &-text {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: justify;
+        letter-spacing: -0.02em;
+        opacity: 0.75;
+        max-width: 400px;
+      }
+    }
+  }
+}

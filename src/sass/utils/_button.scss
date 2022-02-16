@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #4c3c90;
+  appearance: none;
+  background: #ffffff;
+  border: 2px solid #4c3c90;
+  box-sizing: border-box;
+  border-radius: 32px;
+  padding: 9px 20px;
+  width: 240px;
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.header {
+  padding: 40px;
+  background: #edebf4;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation__logo {
+  cursor: pointer;
+}
+.navigation__list {
+  display: flex;
+  gap: 57px;
+  margin-left: auto;
+  align-items: center;
+}
+.navigation__item {
+  white-space: nowrap;
+}
+.navigation__link {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+}
