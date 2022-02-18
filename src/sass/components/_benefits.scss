@@ -1,0 +1,32 @@
+.benefits {
+  padding: 96px 0;
+  &__head {
+    margin-top: 48px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #4c3c90;
+  }
+  &__list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 64px;
+    &-item {
+      padding: 20px 40px;
+      background: #edebf4;
+      border-radius: 96px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center;
+      color: #4c3c90;
+    }
+  }
+}

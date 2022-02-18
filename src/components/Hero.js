@@ -4,6 +4,7 @@ import Container from "./Container";
 import noteIcon from '../images/icon/note.svg'
 import smsIcon from '../images/icon/sms.svg';
 import callCalling from '../images/icon/call-calling.svg'
+import Subtract from '../images/icon/Subtract.svg'
 import '../sass/main.scss'
 
 const Hero = ({title, widthEl, text,buttons,call,img}) => {
@@ -34,6 +35,7 @@ const Hero = ({title, widthEl, text,buttons,call,img}) => {
             {call && <button className="aside-right-button">
               <img className="aside-right-button-img" src={callCalling} alt="callCalling" />  Zadzwoń do nas!
             </button>}
+            <img src={Subtract} className="aside-right-img"/>
            </Container>
         </section>
     )

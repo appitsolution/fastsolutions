@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from './Container';
 import AdobeStock from '../images/AdobeStock.png'
+import arrowRightBLue from '../images/icon/arrow-right-blue.svg'
 const FeedbackMail = () => {
     return(
         <>
@@ -21,9 +22,9 @@ const FeedbackMail = () => {
                             <div className='feedback__information-form-submit'>
                                 <input className='feedback__information-form-input' type="text" placeholder='name@email.com'/>
                             <button className='feedback__information-form-button'>
-                               <div className='feedback__information-form-button-thoomb'>
-                                    <img className='feedback__information-form-icon' src=''/>
-                               </div>
+                               
+                                    <img className='feedback__information-form-icon' src={arrowRightBLue} />
+                               
                             </button>
                             </div>
                             <div className='feedback__information-form-accept-thoomb'>

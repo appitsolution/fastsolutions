@@ -1,0 +1,14 @@
+.clientreport {
+  padding: 96px 0;
+  &__head {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    margin-top: 16px;
+    margin-bottom: 96px;
+    color: rgba(76, 60, 144, 1);
+  }
+}

@@ -1,0 +1,33 @@
+.methodaction {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  &__head {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    margin-top: 48px;
+    color: #4c3c90;
+    font-weight: 800;
+    &-span {
+      font-weight: 800;
+    }
+  }
+  &__text {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify;
+    letter-spacing: -0.02em;
+    opacity: 0.75;
+    color: #4c3c90;
+    margin-top: 24px;
+    &-span {
+      font-weight: 800;
+    }
+  }
+}

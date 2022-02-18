@@ -1,0 +1,25 @@
+.trustcontent {
+  padding: 96px 0;
+  &__head {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: rgba(76, 60, 144, 1);
+    letter-spacing: -0.02em;
+    margin-top: 48px;
+  }
+  &__text {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(76, 60, 144, 1);
+    text-align: justify;
+    letter-spacing: -0.02em;
+    opacity: 0.75;
+    margin-top: 24px;
+  }
+}

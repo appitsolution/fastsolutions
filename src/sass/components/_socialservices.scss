@@ -1,0 +1,92 @@
+.socialservices {
+  padding: 96px 0;
+  background: #edebf4;
+  &__head {
+    margin-top: 16px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    color: #4c3c90;
+  }
+  &__list {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &-item {
+      padding: 32px;
+      background: #ffffff;
+      border: 2px solid #4c3c90;
+      box-sizing: border-box;
+      &-number {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -0.02em;
+        opacity: 0.5;
+      }
+      &-head {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+        color: #4c3c90;
+      }
+      &-text {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: #4c3c90;
+        margin-top: 8px;
+      }
+      &:last-child {
+        background: #4c3c90;
+        border: 2px solid #4c3c90;
+        box-sizing: border-box;
+        box-shadow: 0px 38px 65px rgba(76, 60, 144, 0.38),
+          0px 24.6296px 38.0671px rgba(76, 60, 144, 0.288519),
+          0px 14.637px 20.7037px rgba(76, 60, 144, 0.230815),
+          0px 7.6px 10.5625px rgba(76, 60, 144, 0.19),
+          0px 3.0963px 5.2963px rgba(76, 60, 144, 0.149185),
+          0px 0.703704px 2.55787px rgba(76, 60, 144, 0.0914815);
+      }
+      &:last-child .socialservices__list-item-number {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        opacity: 0.5;
+      }
+      &:last-child .socialservices__list-item-head {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+      }
+      &:last-child .socialservices__list-item-text {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+      }
+    }
+  }
+}

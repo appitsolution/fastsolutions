@@ -1,0 +1,22 @@
+.clientcontent {
+  padding: 96px 0;
+  &-text {
+    margin-top: 16px;
+    margin-bottom: 64px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify;
+  }
+  &-description {
+    margin-top: 64px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify;
+  }
+}

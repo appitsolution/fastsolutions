@@ -1,0 +1,38 @@
+.notification-text {
+  position: relative;
+  padding: 32px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  color: #dbd8e9;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    #4c3c90;
+}
+.notification-image {
+  &-right-top {
+    bottom: 100%;
+    right: 0;
+    position: absolute;
+    transform: rotate(-90deg);
+  }
+  &-right-bottom {
+    top: 100%;
+    right: 0;
+    position: absolute;
+    transform: rotate(180deg);
+  }
+  &-left-top {
+    bottom: 100%;
+    left: 0;
+    position: absolute;
+  }
+  &-left-bottom {
+    top: 100%;
+    left: 0;
+    position: absolute;
+    transform: rotate(90deg);
+  }
+}

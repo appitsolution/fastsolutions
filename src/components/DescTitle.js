@@ -1,7 +1,7 @@
 import React from "react";
-const DescTitle = ({children}) => {
+const DescTitle = ({width,children}) => {
     return(
-        <p className="desc-title">{children}</p>
+        <p className="desc-title" style={{width: `${width}px`}}>{children}</p>
     )
 }
 export default DescTitle

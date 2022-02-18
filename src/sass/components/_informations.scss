@@ -61,6 +61,7 @@
     &-item {
       background: #edebf4;
       padding: 32px;
+      position: relative;
       min-width: 400px;
       &-img {
         margin-bottom: 15px;
@@ -84,6 +85,12 @@
         letter-spacing: -0.02em;
         opacity: 0.75;
         max-width: 400px;
+      }
+      &-icon {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        transform: rotate(180deg);
       }
     }
   }

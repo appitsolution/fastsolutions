@@ -3,6 +3,7 @@
   background-image: url("../images/herobg.jpg");
   height: 630px;
   overflow: hidden;
+  border-bottom: 4px solid rgba(76, 60, 144, 1);
 }
 .hero__aside-left {
   display: flex;
@@ -110,4 +111,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &-img {
+    z-index: 10;
+  }
+}
+.aside-right-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
