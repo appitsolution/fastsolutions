@@ -9,6 +9,13 @@ const Slider = () => {
   const swiper = new Swiper(".swiper", {
     modules: [Navigation, Pagination, Scrollbar],
     speed: 500,
+    slidesPerView: 2,
+    spaceBetween: 32,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -21,14 +28,28 @@ const Slider = () => {
           <div class="swiper-slide">
             <img
               className="aboutcompany__slider-list-item-img"
-              src={slider}
+              src={slider2}
               alt="office"
             />
           </div>
           <div class="swiper-slide">
             <img
               className="aboutcompany__slider-list-item-img"
+              src={slider}
+              alt="team"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
               src={slider2}
+              alt="office"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
+              src={slider}
               alt="team"
             />
           </div>
