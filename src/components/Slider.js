@@ -11,14 +11,14 @@ const Slider = () => {
     speed: 500,
     slidesPerView: 2,
     spaceBetween: 32,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
     pagination: {
       el: ".swiper-pagination",
       type: "bullets",
       clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
     },
   })
   return (
