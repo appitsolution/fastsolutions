@@ -8,17 +8,17 @@ import "swiper/css/pagination"
 const Slider = () => {
   const swiper = new Swiper(".swiper", {
     modules: [Navigation, Pagination, Scrollbar],
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
     speed: 500,
     slidesPerView: 2,
     spaceBetween: 32,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
     },
   })
   return (
