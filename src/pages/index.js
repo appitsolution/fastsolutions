@@ -19,7 +19,7 @@ const index = () => {
         text="Działamy na terenie całego kraju od 2011 roku."
         buttons={["Dowiedz się więcej"]}
         call={true}
-        img={sukaindex}
+        img={homeimg}
       />
       <Informations />
       <AboutCompany />
