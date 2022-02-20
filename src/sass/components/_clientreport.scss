@@ -12,3 +12,24 @@
     color: rgba(76, 60, 144, 1);
   }
 }
+.clientreportlist {
+  padding: 96px 0;
+  &__list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &-item {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center;
+      color: #4c3c90;
+      background: #edebf4;
+      border-radius: 96px;
+      padding: 20px 40px;
+    }
+  }
+}

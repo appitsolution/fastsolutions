@@ -42,7 +42,13 @@
   }
 }
 .informations__reference {
+  position: relative;
   margin-top: 140px;
+  &-absolute {
+    position: absolute;
+    top: -90px;
+    right: 0;
+  }
   &-head {
     font-family: Manrope;
     font-style: normal;

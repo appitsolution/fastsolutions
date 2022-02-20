@@ -1,0 +1,49 @@
+.library {
+  padding: 96px 0;
+  background: rgba(237, 235, 244, 1);
+  position: relative;
+  &__block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    &-thoomb {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &-head {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 40px;
+      margin-top: 16px;
+      width: 528px;
+    }
+    &-button {
+      display: flex;
+      justify-content: center;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 32px;
+      text-align: right;
+      letter-spacing: -0.02em;
+      color: #4c3c90;
+      padding: 12px 0;
+      width: 240px;
+      margin-top: 32px;
+      background: #ffffff;
+      border: 2px solid #4c3c90;
+      box-sizing: border-box;
+      border-radius: 32px;
+    }
+    &-img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}

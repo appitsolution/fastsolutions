@@ -1,0 +1,42 @@
+.contentcasestudy {
+  padding: 96px 0;
+  &__head {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: rgba(76, 60, 144, 1);
+    text-align: justify;
+    margin-bottom: 64px;
+  }
+  &__text {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(76, 60, 144, 1);
+    text-align: justify;
+    margin-top: 16px;
+    margin-bottom: 64px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 16px;
+    margin-bottom: 64px;
+    padding-left: 20px;
+    &-item {
+      list-style: disc;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 32px;
+      color: rgba(76, 60, 144, 1);
+      text-align: justify;
+    }
+  }
+}

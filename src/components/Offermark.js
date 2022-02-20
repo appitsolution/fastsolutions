@@ -7,7 +7,7 @@ const Offermark = ({ nameDesc, title, text, array, pointTeg }) => {
   return (
     <section className="offermark">
       <Container>
-        <DescTitle>{nameDesc}</DescTitle>
+        {nameDesc && <DescTitle>{nameDesc}</DescTitle>}
         <p className="offermark__text">{text}</p>
         {title === undefined ? null : (
           <h1 className="offermark__head">{title}</h1>
@@ -23,9 +23,16 @@ const Offermark = ({ nameDesc, title, text, array, pointTeg }) => {
             }
             return (
               <li className={`offermark__list-item ${num.blue}`}>
-                <p className="offermark__list-item-number">{num.number}</p>
-                <h2 className="offermark__list-item-head">{num.head}</h2>
-                <p className="offermark__list-item-text">{num.text}</p>
+                {num.number && (
+                  <p className="offermark__list-item-number">{num.number}</p>
+                )}
+
+                {num.head && (
+                  <h2 className="offermark__list-item-head">{num.head}</h2>
+                )}
+                {num.text && (
+                  <p className="offermark__list-item-text">{num.text}</p>
+                )}
               </li>
             )
           })}

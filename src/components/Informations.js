@@ -6,6 +6,7 @@ import offer from "../images/icon/offer.svg"
 import chart from "../images/icon/chart.svg"
 import path5576 from "../images/icon/path5576.svg"
 import Rectangle2 from "../images/icon/Rectangle2.svg"
+import planetimg from "../images/planetimg.png"
 
 const Informations = () => {
   return (
@@ -67,6 +68,7 @@ const Informations = () => {
           </div>
         </Container>
         <div className="informations__reference">
+          <img src={planetimg} className="informations__reference-absolute" />
           <Container>
             <DescTitle>REFERENCJE</DescTitle>
             <h1 className="informations__reference-head">

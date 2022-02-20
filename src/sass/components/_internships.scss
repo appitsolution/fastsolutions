@@ -1,0 +1,106 @@
+.internships {
+  background: rgba(237, 235, 244, 1);
+  padding: 96px 0;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    &-item {
+      &-head {
+        margin-top: 16px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: justify;
+      }
+      &-text {
+        margin-top: 16px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: justify;
+      }
+    }
+  }
+  &__text {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify;
+    margin-top: 32px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 48px;
+    &-item {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center;
+      padding: 20px 40px;
+      background: #dbd8e9;
+      border-radius: 96px;
+      color: rgba(76, 60, 144, 1);
+    }
+  }
+  &__button {
+    display: flex;
+    gap: 64px;
+    justify-content: space-between;
+    margin-top: 48px;
+    &-item {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 50px;
+      text-align: justify;
+      color: rgba(76, 60, 144, 1);
+      max-width: 528px;
+      &-text {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: justify;
+      }
+      &-button {
+        appearance: none;
+        background: #ffffff;
+        border: 2px solid #4c3c90;
+        box-sizing: border-box;
+        box-shadow: 0px 38px 65px rgba(76, 60, 144, 0.38),
+          0px 24.6296px 38.0671px rgba(76, 60, 144, 0.288519),
+          0px 14.637px 20.7037px rgba(76, 60, 144, 0.230815),
+          0px 7.6px 10.5625px rgba(76, 60, 144, 0.19),
+          0px 3.0963px 5.2963px rgba(76, 60, 144, 0.149185),
+          0px 0.703704px 2.55787px rgba(76, 60, 144, 0.0914815);
+        border-radius: 32px;
+        display: flex;
+        justify-content: center;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: right;
+        padding: 12px 0;
+        width: 100%;
+        color: rgba(76, 60, 144, 1);
+        margin-top: 40px;
+      }
+    }
+  }
+}

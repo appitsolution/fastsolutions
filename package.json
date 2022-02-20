@@ -44,6 +44,7 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^5.2.1",
     "sass": "^1.49.7",
+    "swiper": "^8.0.6",
     "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13"
   },

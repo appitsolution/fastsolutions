@@ -14,7 +14,7 @@ const Header = () => {
           </Link>
           <ul className="navigation__list">
             <li className="navigation__item">
-              <Link to="/about" className="navigation__link" src="">
+              <Link to="/about" className="navigation__link">
                 O nas
                 <img src={imgBottom} className="navigation__item-img" />
               </Link>
@@ -88,9 +88,9 @@ const Header = () => {
               </Link>
             </li>
             <li className="navigation__item">
-              <a className="navigation__link" src="">
+              <Link to="/joboffers" className="navigation__link">
                 Oferty pracy
-              </a>
+              </Link>
             </li>
             <li className="navigation__item">
               <a className="navigation__link" src="">
@@ -99,9 +99,9 @@ const Header = () => {
               </a>
             </li>
             <li className="navigation__item">
-              <a className="navigation__link" src="">
+              <Link to="/contacts" className="navigation__link">
                 Kontakt
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
