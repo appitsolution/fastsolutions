@@ -6,7 +6,7 @@ import AboutCompany from "../components/AboutCompany"
 import Blog from "../components/Blog"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
-import sukaindex from "../images/sukaindex.png"
+import homeimg from "../images/homeimg.png"
 import ModalWindow from "../components/ModalWindow"
 import "../sass/main.scss"
 const index = () => {
