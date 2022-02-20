@@ -6,7 +6,7 @@ import AboutCompany from "../components/AboutCompany"
 import Blog from "../components/Blog"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
-import imgIndex from "../images/imgindex.png"
+import sukaindex from "../images/imgindex.png"
 import ModalWindow from "../components/ModalWindow"
 import "../sass/main.scss"
 const index = () => {
@@ -19,7 +19,7 @@ const index = () => {
         text="Działamy na terenie całego kraju od 2011 roku."
         buttons={["Dowiedz się więcej"]}
         call={true}
-        img={imgIndex}
+        img={sukaindex}
       />
       <Informations />
       <AboutCompany />
