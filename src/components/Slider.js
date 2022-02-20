@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import slider from "../images/slider.jpg"
 import slider2 from "../images/slider2.jpg"
 import Swiper, { Navigation, Pagination, Scrollbar } from "swiper"
@@ -6,20 +6,23 @@ import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 const Slider = () => {
-  const swiper = new Swiper(".swiper", {
-    modules: [Navigation, Pagination, Scrollbar],
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-    speed: 500,
-    slidesPerView: 2,
-    spaceBetween: 32,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  useEffect(() => {
+    const swiper = new Swiper(".swiper", {
+      modules: [Navigation, Pagination, Scrollbar],
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        bulletElement: "button",
+        clickable: true,
+      },
+      speed: 500,
+      slidesPerView: 2,
+      spaceBetween: 32,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    })
   })
   return (
     <div className="aboutcompany__slider">
