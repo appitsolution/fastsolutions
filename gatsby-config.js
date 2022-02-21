@@ -13,7 +13,8 @@ module.exports = {
    * Gatsby has a rich ecosystem of plugins.
    * If you need any more you can search here: https://www.gatsbyjs.com/plugins/
    */
-  plugins: [`gatsby-plugin-sass`,
+  plugins: [
+    `gatsby-plugin-sass`,
     {
       /**
        * First up is the WordPress source plugin that connects Gatsby
@@ -26,8 +27,7 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
-        url:
-          `https://fastsolutions.grupaww.jchost09.pl/graphql`,
+        url: `https://fastsolutions.grupaww.jchost09.pl/graphql`,
       },
     },
 

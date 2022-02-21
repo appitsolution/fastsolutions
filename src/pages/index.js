@@ -26,7 +26,7 @@ const index = () => {
       <Blog />
       <FeedbackMail />
       <Footer />
-      {/* <ModalWindow/> */}
+      {/* <ModalWindow /> */}
     </div>
   )
 }
