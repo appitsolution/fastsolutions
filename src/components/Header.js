@@ -6,22 +6,20 @@ import "../sass/main.scss"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
-    {
+  query MyQuery {
+    wpMenu {
+      id
       menuItems {
         nodes {
-          label
+          title
           url
-          childItems {
-            nodes {
-              label
-              url
-            }
-          }
         }
       }
     }
+  }
+  
   `)
-  const menu = data.menuItems.nodes
+  const menu = data
   console.dir(menu)
   return (
     <>
@@ -32,7 +30,7 @@ const Header = () => {
           </Link>
 
           <ul className="navigation__list">
-            {menu.map(num => (
+            {/* {menu.map(num => (
               <li className="navigation__item">
                 <Link to={num.url} className="navigation__link">
                   {num.label}
@@ -57,7 +55,7 @@ const Header = () => {
                   )}
                 </Link>
               </li>
-            ))}
+            ))} */}
           </ul>
         </nav>
       </header>
