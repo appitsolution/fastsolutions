@@ -32,7 +32,7 @@ const BadanieContent = () => {
             </p>
           </div>
           <div className="badaniecontent__end-image">
-            <img className="" src={methodList} />
+            <img className="badaniecontent__end-image-img" src={methodList} />
           </div>
         </div>
       </Container>

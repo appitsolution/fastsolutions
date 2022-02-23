@@ -1,39 +1,84 @@
-.why {
-  padding-top: 96px;
-  padding-bottom: 96px;
-  background: #edebf4;
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    gap: 64px;
-    &-item {
-      &-head {
-        font-family: Manrope;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 40px;
-        margin-top: 16px;
-        color: #4c3c90;
-      }
-      &-text {
-        font-family: Manrope;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 32px;
-        text-align: justify;
-        letter-spacing: -0.02em;
-        opacity: 0.75;
-        margin-top: 16px;
-        color: #4c3c90;
-        max-width: 544px;
-        &-span {
-          font-weight: 800;
+@media screen and(max-width: 480px) {
+  .why {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background: #edebf4;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 64px;
+      flex-direction: column;
+      &-item {
+        &-head {
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 40px;
+          margin-top: 16px;
+          color: #4c3c90;
+        }
+        &-text {
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 32px;
+          text-align: justify;
+          letter-spacing: -0.02em;
+          opacity: 0.75;
+          margin-top: 16px;
+          color: #4c3c90;
+          max-width: 544px;
+          &-span {
+            font-weight: 800;
+          }
+        }
+        &-img {
+          display: none;
         }
       }
-      &-img {
-        width: 100%;
+    }
+  }
+}
+@media screen and(min-width: 865px) {
+  .why {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background: #edebf4;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 64px;
+      &-item {
+        &-head {
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 40px;
+          margin-top: 16px;
+          color: #4c3c90;
+        }
+        &-text {
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 32px;
+          text-align: justify;
+          letter-spacing: -0.02em;
+          opacity: 0.75;
+          margin-top: 16px;
+          color: #4c3c90;
+          max-width: 544px;
+          &-span {
+            font-weight: 800;
+          }
+        }
+        &-img {
+          width: 100%;
+        }
       }
     }
   }

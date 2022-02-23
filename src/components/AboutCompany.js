@@ -22,14 +22,12 @@ const AboutCompany = () => {
                 </div>
               </li>
               <li className="aboutcompany__stats-list-item">
-                <img src={decstats} alt="decstats" />
                 <div className="aboutcompany__stats-list-item-block">
                   <p className="aboutcompany__stats-list-item-head">220+</p>
                   <p className="aboutcompany__stats-list-item-text">klientów</p>
                 </div>
               </li>
               <li className="aboutcompany__stats-list-item">
-                <img src={decstats2} alt="" />
                 <div className="aboutcompany__stats-list-item-block">
                   <p className="aboutcompany__stats-list-item-head">650+</p>
                   <p className="aboutcompany__stats-list-item-text">

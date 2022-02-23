@@ -18,4 +18,9 @@
   padding: 9px 20px;
   width: 240px;
   cursor: pointer;
+  transition: all 250ms linear;
+  &:hover {
+    color: #ffffff;
+    background: #4c3c90;
+  }
 }

@@ -4,6 +4,8 @@ import Hero from "../components/Hero"
 import CaseStudies from "../components/CaseStudies"
 import Blog from "../components/Blog"
 import Library from "../components/Library"
+import FeedbackMail from "../components/FeedbackMail"
+import Footer from "../components/Footer"
 const knowledgebase = () => {
   return (
     <>
@@ -12,6 +14,8 @@ const knowledgebase = () => {
       <Blog />
       <Library />
       <CaseStudies />
+      <FeedbackMail />
+      <Footer />
     </>
   )
 }
