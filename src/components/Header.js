@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import logo from "../images/icon/Logo.svg"
 import imgBottom from "../images/icon/arrow-bottom.svg"
 import menuImg from "../images/icon/menu.svg"
-import closeImg from "../images/icon/CloseButton.svg"
+import closeImg from "../images/icon/closeButton.svg"
 import "../sass/main.scss"
 
 const Header = () => {
