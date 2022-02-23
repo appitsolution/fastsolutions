@@ -17,6 +17,7 @@ const joboffers = () => {
         widthEl={"558"}
         buttons={["Skontaktuj się"]}
       />
+
       <PermanentTeam />
       <Internships />
       <Workwithus />
