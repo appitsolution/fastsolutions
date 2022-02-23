@@ -1,120 +1,248 @@
-.footer__companys {
-  overflow-x: hidden;
-  border-bottom: 1px solid #edebf4;
-  &-list {
-    display: flex;
-    gap: 130px;
-    align-items: center;
-    &-item {
-      padding: 47px 0;
-    }
-  }
-}
-.footer__information {
-  display: flex;
-  flex-direction: column;
-  &-contacts {
-    padding-top: 50px;
-    padding-right: 46px;
-    padding-bottom: 86px;
+@media screen and(max-width: 480px) {
+  .footer__companys {
+    overflow-x: hidden;
+    border-bottom: 1px solid #edebf4;
     &-list {
       display: flex;
-      flex-direction: column;
-      gap: 5px;
-      margin-top: 20px;
+      gap: 130px;
+      align-items: center;
       &-item {
+        padding: 47px 0;
+      }
+    }
+  }
+  .footer__information {
+    display: flex;
+    flex-direction: column;
+    &-contacts {
+      padding-top: 50px;
+      padding-right: 46px;
+      padding-bottom: 86px;
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 20px;
+        &-item {
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 32px;
+        }
+      }
+    }
+    &-feedback {
+      &-head {
         font-family: Manrope;
         font-style: normal;
-        font-weight: normal;
-        font-size: 13px;
-        line-height: 32px;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4c3c90;
       }
-    }
-  }
-  &-feedback {
-    &-head {
-      font-family: Manrope;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 16px;
-      line-height: 22px;
-      color: #4c3c90;
-    }
-    &-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin-top: 20px;
-      &-item {
-        &-link {
-          font-family: Manrope;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 13px;
-          line-height: 14px;
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 20px;
+        &-item {
+          &-link {
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 14px;
+          }
         }
       }
     }
-  }
-  &-navigation {
-    margin-top: 48px;
-    &-head {
-      font-family: Manrope;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 16px;
-      line-height: 22px;
-      color: #4c3c90;
-    }
-    &-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin-top: 20px;
-      &-item {
-        &-link {
-          font-family: Manrope;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 13px;
-          line-height: 14px;
+    &-navigation {
+      margin-top: 48px;
+      &-head {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4c3c90;
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 20px;
+        &-item {
+          &-link {
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 14px;
+          }
         }
       }
     }
+    &-links {
+      margin-top: 48px;
+      &-head {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4c3c90;
+      }
+      &-list {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 20px;
+      }
+    }
   }
-  &-links {
-    margin-top: 48px;
-    &-head {
+  .footer__private {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #edebf4;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    &-text {
       font-family: Manrope;
       font-style: normal;
-      font-weight: 800;
-      font-size: 16px;
-      line-height: 22px;
-      color: #4c3c90;
-    }
-    &-list {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      margin-top: 20px;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: -0.204545px;
+      mix-blend-mode: normal;
+      opacity: 0.5;
     }
   }
 }
-.footer__private {
-  display: flex;
-  justify-content: center;
-  border-top: 1px solid #edebf4;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  &-text {
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: -0.204545px;
-    mix-blend-mode: normal;
-    opacity: 0.5;
+@media screen and(min-width: 865px) {
+  .footer__companys {
+    overflow-x: hidden;
+    border-bottom: 1px solid #edebf4;
+    &-list {
+      display: flex;
+      gap: 130px;
+      align-items: center;
+      &-item {
+        padding: 47px 0;
+      }
+    }
+  }
+  .footer__information {
+    display: flex;
+    &-contacts {
+      border-right: 1px solid #edebf4;
+      padding-top: 50px;
+      padding-right: 46px;
+      padding-bottom: 86px;
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 20px;
+        &-item {
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 32px;
+        }
+      }
+    }
+    &-feedback {
+      padding-left: 46px;
+      padding-top: 48px;
+      &-head {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4c3c90;
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 20px;
+        &-item {
+          &-link {
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+    &-navigation {
+      padding-left: 46px;
+      padding-top: 48px;
+      &-head {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4c3c90;
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 20px;
+        &-item {
+          &-link {
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+    &-links {
+      padding-left: 46px;
+      padding-top: 48px;
+      &-head {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4c3c90;
+      }
+      &-list {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 20px;
+      }
+    }
+  }
+  .footer__private {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #edebf4;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    &-text {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: -0.204545px;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+    }
   }
 }

@@ -1,4 +1,5 @@
 import React from "react"
+import CountUp from "react-countup"
 import Container from "./Container"
 import DescTitle from "./DescTitle"
 import decstats from "../images/icon/decstats.svg"
@@ -15,7 +16,9 @@ const AboutCompany = () => {
             <ul className="aboutcompany__stats-list">
               <li className="aboutcompany__stats-list-item">
                 <div className="aboutcompany__stats-list-item-block">
-                  <p className="aboutcompany__stats-list-item-head">10+</p>
+                  <p className="aboutcompany__stats-list-item-head">
+                    <CountUp start={0} end={10} />+
+                  </p>
                   <p className="aboutcompany__stats-list-item-text">
                     lat doświadczenia
                   </p>
@@ -23,13 +26,17 @@ const AboutCompany = () => {
               </li>
               <li className="aboutcompany__stats-list-item">
                 <div className="aboutcompany__stats-list-item-block">
-                  <p className="aboutcompany__stats-list-item-head">220+</p>
+                  <p className="aboutcompany__stats-list-item-head">
+                    <CountUp start={0} end={220} />+
+                  </p>
                   <p className="aboutcompany__stats-list-item-text">klientów</p>
                 </div>
               </li>
               <li className="aboutcompany__stats-list-item">
                 <div className="aboutcompany__stats-list-item-block">
-                  <p className="aboutcompany__stats-list-item-head">650+</p>
+                  <p className="aboutcompany__stats-list-item-head">
+                    <CountUp start={0} end={650} />+
+                  </p>
                   <p className="aboutcompany__stats-list-item-text">
                     projektów
                   </p>
