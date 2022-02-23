@@ -16,7 +16,7 @@ const Slider = () => {
         clickable: true,
       },
       speed: 500,
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 32,
       navigation: {
         nextEl: ".swiper-button-next",

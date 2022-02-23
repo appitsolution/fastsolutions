@@ -94,7 +94,7 @@
           border: none;
         }
         &-link {
-          padding: 24px 0;
+          padding: 10px 0;
           display: block;
           font-family: Manrope;
           font-style: normal;
@@ -132,13 +132,13 @@
   .navigation {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .navigation__logo {
     cursor: pointer;
   }
   .navigation__list {
     display: flex;
-    gap: 57px;
     margin-left: auto;
     align-items: center;
   }
@@ -170,7 +170,7 @@
       pointer-events: none;
       transition: opacity 250ms linear;
       position: absolute;
-      left: 0;
+      right: 0;
       top: 100%;
       z-index: 15;
     }
