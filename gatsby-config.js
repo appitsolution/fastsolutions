@@ -28,6 +28,7 @@ module.exports = {
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
         url: `https://fastsolutions.grupaww.jchost09.pl/graphql`,
+        timeout: 3600000
       },
     },
 
