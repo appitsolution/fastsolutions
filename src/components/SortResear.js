@@ -147,6 +147,10 @@ Badania, których celem jest określenie stopnia zadowolenia klienta z użytkowa
   },
 ]
 const SortResear = () => {
+  const openDescription = evn => {
+    evn.currentTarget.parentNode.children[1].classList.toggle("active")
+    evn.currentTarget.children[0].classList.toggle("active")
+  }
   return (
     <section className="sortresear">
       <Container>
@@ -157,7 +161,10 @@ const SortResear = () => {
               <ul className="sortresear__list-item-filter">
                 {num.listRequest.map(num => (
                   <li className="sortresear__list-item-filter-item">
-                    <button className="sortresear__list-item-filter-item-button">
+                    <button
+                      className="sortresear__list-item-filter-item-button"
+                      onClick={openDescription}
+                    >
                       {num.title}
                       <img
                         src={buttonHidden}

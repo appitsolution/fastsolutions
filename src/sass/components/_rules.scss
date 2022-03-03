@@ -80,5 +80,11 @@
     box-sizing: border-box;
     border-radius: 96px;
     padding: 20px 40px;
+    cursor: pointer;
+    transition: all 250ms linear;
+    &:hover {
+      color: #ffffff;
+      background: #4c3c90;
+    }
   }
 }

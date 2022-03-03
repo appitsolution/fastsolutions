@@ -30,6 +30,12 @@
       background: #edebf4;
       border-radius: 96px;
       padding: 20px 40px;
+      cursor: pointer;
+      transition: all 250ms linear;
+      &:hover {
+        background: #4c3c90;
+        color: #edebf4;
+      }
     }
   }
 }

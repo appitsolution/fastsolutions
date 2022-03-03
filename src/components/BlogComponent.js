@@ -19,9 +19,9 @@ const BlogComponent = () => {
             </li>
             <li className="blogcomponent__info-list-item">
               <DescTitle>BLOG</DescTitle>
-              <h1 className="blogcomponent__info-list-item-head">
+              <a href="#" className="blogcomponent__info-list-item-head">
                 Opracowanie statystyczne wyników badań „od kuchni”
-              </h1>
+              </a>
               <p className="blogcomponent__info-list-item-description">
                 Dlaczego opracowanie statystyczne wyników badań do prac
                 naukowych warto zlecić profesjonalistom? Opracowanie

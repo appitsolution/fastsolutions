@@ -326,6 +326,10 @@ const Informations = () => {
                     </filter>
                   </defs>
                 </svg>
+                <div className="block-info-stats">
+                  <h2 className="block-info-stats-head">105</h2>
+                  <p className="block-info-stats-text">Ankieterów Terenowych</p>
+                </div>
               </li>
               <li className="informations__offer-list-item">
                 <DescTitle>ZESPÓŁ</DescTitle>

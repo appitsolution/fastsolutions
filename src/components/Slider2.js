@@ -18,10 +18,6 @@ const Slider = () => {
       speed: 500,
       slidesPerView: 2,
       spaceBetween: 32,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
     })
   })
   return (
@@ -122,9 +118,6 @@ const Slider = () => {
           </div>
         </div>
         <div class="swiper-pagination"></div>
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
 
         <div class="swiper-scrollbar"></div>
       </div>
