@@ -1,22 +1,36 @@
-import React from "react"
+import React, { useState } from "react"
 import DescTitle from "../components/DescTitle"
 import Container from "../components/Container"
 import facebook2 from "../images/icon/facebook2.svg"
 import twiter2 from "../images/icon/twiter2.svg"
 import linkedIn2 from "../images/icon/linkedIn2.svg"
 import Rectangle2 from "../images/icon/Rectangle2.svg"
+import GoogleMapReact from "google-map-react"
 const MapsContacts = () => {
+  const AnyReactComponent = ({ text }) => <div>{text}</div>
+  const [center, setCenter] = useState({
+    lat: 59.95,
+    lng: 30.33,
+  })
+  const [zoom, setZoom] = useState(11)
   return (
     <>
       <section className="mapscontacts">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5125.608489078993!2d21.9744056!3d50.0337638!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4cf4948b69992a6!2sFast%20Solutions!5e0!3m2!1spl!2sua!4v1645641261613!5m2!1spl!2sua"
-          width="100%"
-          height="450"
-          style={{ border: 0 }}
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
+        <GoogleMapReact
+          bootstrapURLKeys={{
+            key: "AIzaSyCiO0C-OZCSjjN0HlorvWkBpZXXZfc2Kr4",
+            libraries: ["places", "geometry", "drawing", "visualization"],
+          }}
+          defaultCenter={center}
+          defaultZoom={zoom}
+          yesIWantToUseGoogleMapApiInternals
+        >
+          <AnyReactComponent
+            lat={59.955413}
+            lng={30.337844}
+            text="FastSolution"
+          />
+        </GoogleMapReact>
       </section>
       <section className="contactslink">
         <Container>
