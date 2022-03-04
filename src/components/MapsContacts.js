@@ -6,30 +6,428 @@ import twiter2 from "../images/icon/twiter2.svg"
 import linkedIn2 from "../images/icon/linkedIn2.svg"
 import Rectangle2 from "../images/icon/Rectangle2.svg"
 import GoogleMapReact from "google-map-react"
+import iconMap from "../images/icon/map-icon.svg"
+import logoMap from "../images/icon/logo-map.svg"
 const MapsContacts = () => {
-  const AnyReactComponent = ({ text }) => <div>{text}</div>
-  const [center, setCenter] = useState({
-    lat: 59.95,
-    lng: 30.33,
+  const AnyReactComponent = () => (
+    <div className="map__point">
+      <div className="map__point-logo">
+        <img className="map__point-logo-img" src={logoMap} />
+        <img className="map__point-logo-icon" src={iconMap} />
+      </div>
+      <div className="map__point-text">
+        <h2 className="map__point-text-head">Centrala w Rzeszowie</h2>
+        <p className="map__point-text-description">
+          ABM Fast Solutions ul. Witosa 9B, I piętro 35-115 Rzeszów
+        </p>
+      </div>
+    </div>
+  )
+  const [center] = useState({
+    lat: 50.033097,
+    lng: 21.975638,
   })
-  const [zoom, setZoom] = useState(11)
+  const [zoom] = useState(16)
   return (
     <>
       <section className="mapscontacts">
         <GoogleMapReact
           bootstrapURLKeys={{
             key: "AIzaSyCiO0C-OZCSjjN0HlorvWkBpZXXZfc2Kr4",
-            libraries: ["places", "geometry", "drawing", "visualization"],
+            libraries: ["places"],
           }}
           defaultCenter={center}
           defaultZoom={zoom}
           yesIWantToUseGoogleMapApiInternals
+          options={{
+            styles: [
+              {
+                elementType: "geometry",
+                stylers: [
+                  {
+                    color: "#f5f5f5",
+                  },
+                ],
+              },
+              {
+                elementType: "labels.icon",
+                stylers: [
+                  {
+                    visibility: "off",
+                  },
+                ],
+              },
+              {
+                elementType: "labels.text.fill",
+                stylers: [
+                  {
+                    color: "#616161",
+                  },
+                ],
+              },
+              {
+                elementType: "labels.text.stroke",
+                stylers: [
+                  {
+                    color: "#f5f5f5",
+                  },
+                ],
+              },
+              {
+                featureType: "administrative.country",
+                elementType: "geometry.fill",
+                stylers: [
+                  {
+                    visibility: "off",
+                  },
+                ],
+              },
+              {
+                featureType: "administrative.land_parcel",
+                elementType: "labels.text.fill",
+                stylers: [
+                  {
+                    color: "#bdbdbd",
+                  },
+                ],
+              },
+              {
+                featureType: "administrative.locality",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "administrative.neighborhood",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "landscape",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "landscape.man_made",
+                elementType: "labels.icon",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "landscape.natural",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "landscape.natural.landcover",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "landscape.natural.terrain",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "poi",
+                elementType: "geometry",
+                stylers: [
+                  {
+                    color: "#eeeeee",
+                  },
+                ],
+              },
+              {
+                featureType: "poi",
+                elementType: "labels.text.fill",
+                stylers: [
+                  {
+                    color: "#757575",
+                  },
+                ],
+              },
+              {
+                featureType: "poi.attraction",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "poi.business",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "poi.government",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "poi.medical",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "poi.park",
+                elementType: "geometry",
+                stylers: [
+                  {
+                    color: "#e5e5e5",
+                  },
+                ],
+              },
+              {
+                featureType: "poi.park",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "poi.park",
+                elementType: "labels.text.fill",
+                stylers: [
+                  {
+                    color: "#9e9e9e",
+                  },
+                ],
+              },
+              {
+                featureType: "poi.place_of_worship",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "poi.school",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "poi.sports_complex",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "road",
+                elementType: "geometry",
+                stylers: [
+                  {
+                    color: "#ffffff",
+                  },
+                ],
+              },
+              {
+                featureType: "road.arterial",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "road.arterial",
+                elementType: "labels.text.fill",
+                stylers: [
+                  {
+                    color: "#757575",
+                  },
+                ],
+              },
+              {
+                featureType: "road.highway",
+                elementType: "geometry",
+                stylers: [
+                  {
+                    color: "#dadada",
+                  },
+                ],
+              },
+              {
+                featureType: "road.highway",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "road.highway",
+                elementType: "labels.text.fill",
+                stylers: [
+                  {
+                    color: "#616161",
+                  },
+                ],
+              },
+              {
+                featureType: "road.highway.controlled_access",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "road.local",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "road.local",
+                elementType: "labels.text.fill",
+                stylers: [
+                  {
+                    color: "#9e9e9e",
+                  },
+                ],
+              },
+              {
+                featureType: "transit.line",
+                elementType: "geometry",
+                stylers: [
+                  {
+                    color: "#e5e5e5",
+                  },
+                ],
+              },
+              {
+                featureType: "transit.line",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "transit.station",
+                elementType: "geometry",
+                stylers: [
+                  {
+                    color: "#eeeeee",
+                  },
+                ],
+              },
+              {
+                featureType: "transit.station.airport",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "transit.station.bus",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "transit.station.rail",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "water",
+                elementType: "geometry",
+                stylers: [
+                  {
+                    color: "#c9c9c9",
+                  },
+                ],
+              },
+              {
+                featureType: "water",
+                elementType: "labels",
+                stylers: [
+                  {
+                    visibility: "on",
+                  },
+                ],
+              },
+              {
+                featureType: "water",
+                elementType: "labels.text.fill",
+                stylers: [
+                  {
+                    color: "#9e9e9e",
+                  },
+                ],
+              },
+            ],
+          }}
         >
-          <AnyReactComponent
-            lat={59.955413}
-            lng={30.337844}
-            text="FastSolution"
-          />
+          <AnyReactComponent lat={50.033097} lng={21.975638} />
         </GoogleMapReact>
       </section>
       <section className="contactslink">

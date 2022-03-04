@@ -75,39 +75,54 @@ const Footer = () => {
               <h1 className="footer__information-feedback-head">Oferta</h1>
               <ul className="footer__information-feedback-list">
                 <li className="footer__information-feedback-list-item">
-                  <a className="footer__information-feedback-list-item-link">
+                  <Link
+                    to="/testmark"
+                    className="footer__information-feedback-list-item-link"
+                  >
                     Badania marketingowe
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer__information-feedback-list-item">
-                  <a className="footer__information-feedback-list-item-link">
+                  <Link
+                    to="/socialstudies"
+                    className="footer__information-feedback-list-item-link"
+                  >
                     Badania społeczne
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer__information-feedback-list-item">
-                  <a className="footer__information-feedback-list-item-link">
+                  <Link
+                    to="/misteriousclient/"
+                    className="footer__information-feedback-list-item-link"
+                  >
                     Tajemniczy Klient
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer__information-feedback-list-item">
-                  <a className="footer__information-feedback-list-item-link">
+                  <Link className="footer__information-feedback-list-item-link">
                     Badania jakości obsługi
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer__information-feedback-list-item">
-                  <a className="footer__information-feedback-list-item-link">
+                  <Link className="footer__information-feedback-list-item-link">
                     Analiza statystyczna dla studentów i naukowców
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer__information-feedback-list-item">
-                  <a className="footer__information-feedback-list-item-link">
+                  <Link
+                    to="/satisfaction"
+                    className="footer__information-feedback-list-item-link"
+                  >
                     Badania satysfakcji klientów
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer__information-feedback-list-item">
-                  <a className="footer__information-feedback-list-item-link">
+                  <Link
+                    to="/survey"
+                    className="footer__information-feedback-list-item-link"
+                  >
                     Badanie satysfakcji pracowników
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -131,24 +146,33 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="footer__information-navigation-list-item">
-                  <a className="footer__information-navigation-list-item-link">
+                  <Link
+                    to="/joboffers"
+                    className="footer__information-navigation-list-item-link"
+                  >
                     Oferta
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer__information-navigation-list-item">
-                  <a className="footer__information-navigation-list-item-link">
+                  <Link
+                    to="/knowledgebase"
+                    className="footer__information-navigation-list-item-link"
+                  >
                     Baza wiedzy
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer__information-navigation-list-item">
-                  <a className="footer__information-navigation-list-item-link">
+                  <Link
+                    to="/blog"
+                    className="footer__information-navigation-list-item-link"
+                  >
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer__information-navigation-list-item">
-                  <a className="footer__information-navigation-list-item-link">
+                  <Link className="footer__information-navigation-list-item-link">
                     Polityka prywatności
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer__information-navigation-list-item">
                   <a className="footer__information-navigation-list-item-link">
@@ -156,9 +180,12 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="footer__information-navigation-list-item">
-                  <a className="footer__information-navigation-list-item-link">
+                  <Link
+                    to="/contacts"
+                    className="footer__information-navigation-list-item-link"
+                  >
                     Kontakt
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

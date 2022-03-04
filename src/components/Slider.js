@@ -1,20 +1,20 @@
 import React, { useEffect } from "react"
 import slider from "../images/slider.jpg"
 import slider2 from "../images/slider2.jpg"
-import Swiper, { Navigation, Pagination, Scrollbar } from "swiper"
+import Swiper, { Pagination } from "swiper"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 const Slider = () => {
   useEffect(() => {
-    const swiper = new Swiper(".swiper", {
+    new Swiper(".swiper", {
       modules: [Pagination],
       pagination: {
         el: ".swiper-pagination",
         type: "bullets",
         bulletElement: "button",
         clickable: true,
-        dynamicBullets: true,
+        // dynamicBullets: true,
       },
       speed: 500,
       slidesPerView: 2,

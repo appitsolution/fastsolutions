@@ -29,7 +29,6 @@ const Header = () => {
   const menu = data.wpMenu.menuItems.nodes.filter(
     num => num.parentDatabaseId === 0
   )
-  console.dir(menu)
   menu.shift()
   const [openEl, setOpenEl] = useState(false)
   const openMenu = () => {

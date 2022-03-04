@@ -27,6 +27,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "canvasjs-react-charts": "^1.0.5",
     "gatsby": "^4.0.0",
     "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-manifest": "^4.0.0",
