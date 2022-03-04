@@ -20,17 +20,20 @@ const Informations = () => {
         dockInsidePlotArea: true,
       },
     ],
+    toolTip: {
+      fontColor: "#dbd8e9",
+      backgroundColor: "#4c3c90",
+      Content: `{name} : {y}`,
+    },
     data: [
       {
         type: "doughnut",
         color: "#DBD8E9",
         cursor: "pointer",
-        // indexLabel: "{name} {y}",
-        yValueFormatString: "#,###''",
         dataPoints: [
           {
-            name: "Ankieter terenowy",
-            y: 105,
+            name: `Ankieter terenowy`,
+            y: `105`,
             color: "rgba(76, 60, 144, 1)",
           },
           { name: "Ankieter CATI", y: 63, color: "rgba(237, 235, 244, 1)" },
