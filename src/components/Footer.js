@@ -92,21 +92,21 @@ const Footer = () => {
                 </li>
                 <li className="footer__information-feedback-list-item">
                   <Link
-                    to="/misteriousclient/"
+                    to="/misteriousclient"
                     className="footer__information-feedback-list-item-link"
                   >
                     Tajemniczy Klient
                   </Link>
                 </li>
                 <li className="footer__information-feedback-list-item">
-                  <Link className="footer__information-feedback-list-item-link">
+                  <a className="footer__information-feedback-list-item-link">
                     Badania jakości obsługi
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__information-feedback-list-item">
-                  <Link className="footer__information-feedback-list-item-link">
+                  <a className="footer__information-feedback-list-item-link">
                     Analiza statystyczna dla studentów i naukowców
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__information-feedback-list-item">
                   <Link
@@ -131,16 +131,16 @@ const Footer = () => {
               <ul className="footer__information-navigation-list">
                 <li className="footer__information-navigation-list-item">
                   <Link
-                    className="footer__information-navigation-list-item-link"
                     to="/"
+                    className="footer__information-navigation-list-item-link"
                   >
                     Home
                   </Link>
                 </li>
                 <li className="footer__information-navigation-list-item">
                   <Link
-                    className="footer__information-navigation-list-item-link"
                     to="/about"
+                    className="footer__information-navigation-list-item-link"
                   >
                     O nas
                   </Link>
@@ -170,9 +170,9 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="footer__information-navigation-list-item">
-                  <Link className="footer__information-navigation-list-item-link">
+                  <a className="footer__information-navigation-list-item-link">
                     Polityka prywatności
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__information-navigation-list-item">
                   <a className="footer__information-navigation-list-item-link">
