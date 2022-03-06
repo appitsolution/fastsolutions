@@ -124,7 +124,6 @@
       }
       &-item:first-child {
         width: 480px;
-        // margin: 0 auto;
       }
       &-item:last-child {
         margin-top: 45px;
@@ -280,8 +279,23 @@
   color: #dbd8e9;
 }
 .chart-canvas {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   // padding: 30px;
+}
+.text-chart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 128px;
+  line-height: 128px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #4c3c90;
 }

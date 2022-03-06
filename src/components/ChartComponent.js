@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import CountUp from "react-countup"
 import { Chart, registerables } from "chart.js"
 Chart.register(...registerables)
 const ChartComponent = () => {
@@ -32,20 +33,25 @@ const ChartComponent = () => {
         ],
       },
       options: {
+        borderWidth: 0,
+        weight: 1,
+        cutout: 170,
         plugins: {
           legend: {
             display: false,
-          },
-          title: {
-            display: true,
-            text: "691",
-            position: "bottom",
-            fullSize: false,
           },
           tooltip: {
             backgroundColor: "#4c3c90",
             titleColor: "#edebf4",
             padding: "16",
+            titleFont: {
+              weight: "bold",
+              // size: 30,
+            },
+            bodyFont: {
+              size: 18,
+            },
+            displayColors: false,
           },
         },
         scales: {
@@ -60,6 +66,9 @@ const ChartComponent = () => {
     <>
       <div className="chart-canvas">
         <canvas id="myChart"></canvas>
+        <h1 className="text-chart">
+          <CountUp start={0} end={691} />
+        </h1>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </>

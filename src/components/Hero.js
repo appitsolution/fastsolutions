@@ -1,10 +1,9 @@
-import React, { useState } from "react"
+import React from "react"
 import Button from "./Button"
 import Container from "./Container"
 import noteIcon from "../images/icon/note.svg"
 import smsIcon from "../images/icon/sms.svg"
 import callCalling from "../images/icon/call-calling.svg"
-import Subtract from "../images/icon/Subtract.svg"
 import "../sass/main.scss"
 import ModalWindow from "./ModalWindow"
 
@@ -21,7 +20,7 @@ const Hero = ({ title, widthEl, text, buttons, call, img }) => {
           {text === null ? null : (
             <p className="hero__block-mobile-description">{text}</p>
           )}
-          <img src={img} className="hero__block-mobile-img" />
+          <img src={img} className="hero__block-mobile-img" alt="icon" />
           {buttons.length === 0 ? null : (
             <div className="hero__block-mobile-buttons">
               {buttons.map(num => (
@@ -30,7 +29,10 @@ const Hero = ({ title, widthEl, text, buttons, call, img }) => {
             </div>
           )}
           {call && (
-            <button className="hero__block-mobile-aside-right-button">
+            <button
+              className="hero__block-mobile-aside-right-button"
+              onClick={openWindow}
+            >
               <img
                 className="hero__block-mobile-aside-right-button-img"
                 src={callCalling}
@@ -75,7 +77,7 @@ const Hero = ({ title, widthEl, text, buttons, call, img }) => {
                 </div>
               )}
             </div>
-            <img src={img} className="hero__block-img" />
+            <img src={img} alt="icon" className="hero__block-img" />
           </div>
           <div className="hero__aside-left" id="aside-left">
             <img

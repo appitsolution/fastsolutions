@@ -7,7 +7,6 @@ import Blog from "../components/Blog"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
 import homeimg from "../images/homeimg.png"
-import ModalWindow from "../components/ModalWindow"
 import "../sass/main.scss"
 const index = () => {
   return (
@@ -26,7 +25,6 @@ const index = () => {
       <Blog />
       <FeedbackMail />
       <Footer />
-      {/* <ModalWindow /> */}
     </div>
   )
 }
