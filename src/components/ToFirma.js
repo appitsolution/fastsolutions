@@ -1,11 +1,11 @@
 import React from "react"
 import Container from "./Container"
 import DescTitle from "./DescTitle"
-import chart from "../images/icon/chart.svg"
 import teacher from "../images/icon/teacher.svg"
 import statusUp from "../images/icon/status-up.svg"
 import trade from "../images/icon/trade.svg"
 import Slider from "./Slider"
+import ChartComponent from "./ChartComponent"
 const ToFirma = () => {
   return (
     <section className="ofirma">
@@ -13,11 +13,7 @@ const ToFirma = () => {
         <div className="ofirma__push">
           <ul className="ofirma__push-list">
             <li className="ofirma__push-list-item">
-              <img
-                src={chart}
-                className="ofirma__push-list-item-img"
-                alt="chart"
-              />
+              <ChartComponent />
             </li>
             <li className="ofirma__push-list-item">
               <DescTitle>O FIRMIE</DescTitle>

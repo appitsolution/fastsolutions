@@ -1,6 +1,12 @@
 import React, { useEffect } from "react"
-import slider from "../images/slider.jpg"
+import slider1 from "../images/slider1.jpg"
 import slider2 from "../images/slider2.jpg"
+import slider3 from "../images/slider3.jpg"
+import slider4 from "../images/slider4.jpg"
+import slider5 from "../images/slider5.jpg"
+import slider6 from "../images/slider6.jpg"
+import slider7 from "../images/slider7.jpg"
+import slider8 from "../images/slider8.jpg"
 import Swiper, { Pagination } from "swiper"
 import "swiper/css"
 import "swiper/css/navigation"
@@ -28,28 +34,56 @@ const Slider = () => {
           <div class="swiper-slide">
             <img
               className="aboutcompany__slider-list-item-img"
-              src={slider2}
+              src={slider1}
               alt="office"
             />
           </div>
           <div class="swiper-slide">
             <img
               className="aboutcompany__slider-list-item-img"
-              src={slider}
+              src={slider2}
               alt="team"
             />
           </div>
           <div class="swiper-slide">
             <img
               className="aboutcompany__slider-list-item-img"
-              src={slider2}
+              src={slider3}
               alt="office"
             />
           </div>
           <div class="swiper-slide">
             <img
               className="aboutcompany__slider-list-item-img"
-              src={slider}
+              src={slider4}
+              alt="team"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
+              src={slider5}
+              alt="team"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
+              src={slider6}
+              alt="team"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
+              src={slider7}
+              alt="team"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
+              src={slider8}
               alt="team"
             />
           </div>

@@ -1,55 +1,13 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Container from "./Container"
 import DescTitle from "./DescTitle"
 import Button from "./Button"
 import offer from "../images/icon/offer.svg"
 import planetimg from "../images/planetimg.png"
 import Slider2 from "./Slider2"
-import CanvasJSReact from "../canvasjs.react"
+import ChartComponent from "./ChartComponent"
 
 const Informations = () => {
-  const CanvasJS = CanvasJSReact.CanvasJS
-  const CanvasJSChart = CanvasJSReact.CanvasJSChart
-  const options = {
-    animationEnabled: true,
-    subtitles: [
-      {
-        text: "691",
-        verticalAlign: "center",
-        fontSize: 90,
-        dockInsidePlotArea: true,
-      },
-    ],
-    toolTip: {
-      fontColor: "#dbd8e9",
-      backgroundColor: "#4c3c90",
-      Content: `{name} : {y}`,
-    },
-    data: [
-      {
-        type: "doughnut",
-        color: "#DBD8E9",
-        cursor: "pointer",
-        dataPoints: [
-          {
-            name: `Ankieter terenowy`,
-            y: `105`,
-            color: "rgba(76, 60, 144, 1)",
-          },
-          { name: "Ankieter CATI", y: 63, color: "rgba(237, 235, 244, 1)" },
-          {
-            name: "Audytor",
-            y: 446,
-            color: "rgba(219, 216, 233, 1)",
-            markerColor: "rgba(76, 60, 144, 1)",
-          },
-          { name: "Koordynator", y: 33, color: "rgba(183, 177, 211, 1)" },
-          { name: "Moderator", y: 13, color: "rgba(148, 138, 188, 1)" },
-          { name: "Transkrybent", y: 44, color: "rgba(112, 99, 166, 1)" },
-        ],
-      },
-    ],
-  }
   return (
     <>
       <section className="informations">
@@ -89,7 +47,7 @@ const Informations = () => {
           <div className="informations__team">
             <ul className="informations__offer-list">
               <li className="informations__offer-list-item">
-                <CanvasJSChart options={options} />
+                <ChartComponent />
               </li>
               <li className="informations__offer-list-item">
                 <DescTitle>ZESPÓŁ</DescTitle>

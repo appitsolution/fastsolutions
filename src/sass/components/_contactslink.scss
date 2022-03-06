@@ -113,6 +113,8 @@
         padding: 32px;
         background: #edebf4;
         position: relative;
+        display: flex;
+        flex-direction: column;
         &-head {
           font-family: Manrope;
           font-style: normal;
@@ -142,6 +144,8 @@
           text-align: justify;
           letter-spacing: -0.02em;
           opacity: 0.75;
+          color: rgba(76, 60, 144, 1);
+          text-decoration: none;
           &-mail {
             font-family: Manrope;
             font-style: normal;
@@ -153,6 +157,8 @@
             letter-spacing: -0.02em;
             text-decoration-line: underline;
             opacity: 0.75;
+            color: rgba(76, 60, 144, 1);
+            text-decoration: none;
           }
         }
         &-img {

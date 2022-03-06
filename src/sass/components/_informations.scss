@@ -119,9 +119,16 @@
       justify-content: space-between;
       &-item {
         position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+      &-item:first-child {
+        width: 480px;
+        // margin: 0 auto;
       }
       &-item:last-child {
         margin-top: 45px;
+        align-items: flex-start;
       }
     }
     &-head {
@@ -271,4 +278,10 @@
   line-height: 32px;
   letter-spacing: -0.02em;
   color: #dbd8e9;
+}
+.chart-canvas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // padding: 30px;
 }

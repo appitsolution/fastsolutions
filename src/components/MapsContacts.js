@@ -450,18 +450,27 @@ const MapsContacts = () => {
               <h2 className="contactslink__notification-item-head">
                 Zadzwoń do nas
               </h2>
-              <p className="contactslink__notification-item-text">
+              <a
+                href="tel:+48177852261"
+                className="contactslink__notification-item-text"
+              >
                 Tel. (+48) 17 785 22 61
-              </p>
-              <p className="contactslink__notification-item-text">
+              </a>
+              <a
+                href="tel:+48794708666"
+                className="contactslink__notification-item-text"
+              >
                 Tel. kom.: (+48) 794 708 666
-              </p>
+              </a>
               <h2 className="contactslink__notification-item-head-second">
                 Napisz do nas
               </h2>
-              <p className="contactslink__notification-item-text-mail">
+              <a
+                href="mail:kontakt@fastsolutions.pl"
+                className="contactslink__notification-item-text-mail"
+              >
                 kontakt@fastsolutions.pl
-              </p>
+              </a>
               <img
                 src={Rectangle2}
                 className={"contactslink__notification-item-img"}

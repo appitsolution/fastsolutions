@@ -84,6 +84,13 @@
       justify-content: space-between;
       align-items: center;
       &-item {
+        &:first-child {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 480px;
+          margin: 0 auto;
+        }
         &-head {
           font-family: Manrope;
           font-style: normal;
