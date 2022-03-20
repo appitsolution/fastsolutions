@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Container from "./Container"
 import company1 from "../images/icon/company1.svg"
 import company2 from "../images/icon/company2.svg"
@@ -12,11 +12,52 @@ import logoFooter from "../images/icon/logo-footer.svg"
 import { Link } from "gatsby"
 
 const Footer = () => {
+  const [num, setSuk] = useState(0)
+  const [plus, setPlus] = useState(true)
+  useEffect(() => {
+    if (num > 1300) {
+      setPlus(false)
+    }
+    if (num < 0) {
+      setPlus(true)
+    }
+    plus ? setSuk(num + 0.1) : setSuk(num - 0.1)
+  }, [num])
   return (
     <>
       <section className="footer">
         <div className="footer__companys">
-          <ul className="footer__companys-list">
+          <ul
+            className="footer__companys-list"
+            style={{ transform: `translateX(-${num}px)` }}
+          >
+            <li className="footer__companys-list-item">
+              <img src={company1} className="footer__companys-list-item-img" />
+            </li>
+            <li className="footer__companys-list-item">
+              <img src={company2} className="footer__companys-list-item-img" />
+            </li>
+            <li className="footer__companys-list-item">
+              <img src={company3} className="footer__companys-list-item-img" />
+            </li>
+            <li className="footer__companys-list-item">
+              <img src={company4} className="footer__companys-list-item-img" />
+            </li>
+            <li className="footer__companys-list-item">
+              <img src={company5} className="footer__companys-list-item-img" />
+            </li>
+            <li className="footer__companys-list-item">
+              <img src={company1} className="footer__companys-list-item-img" />
+            </li>
+            <li className="footer__companys-list-item">
+              <img src={company2} className="footer__companys-list-item-img" />
+            </li>
+            <li className="footer__companys-list-item">
+              <img src={company3} className="footer__companys-list-item-img" />
+            </li>
+            <li className="footer__companys-list-item">
+              <img src={company4} className="footer__companys-list-item-img" />
+            </li>
             <li className="footer__companys-list-item">
               <img src={company1} className="footer__companys-list-item-img" />
             </li>

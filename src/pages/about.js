@@ -21,7 +21,6 @@ profesjonalną firmą badawczą działającą na terenie całego kraju."
         buttons={["Wypełnij brief", "Skontaktuj się"]}
         img={flag}
       />
-
       <ToFirma />
       <WhyNot />
       <Rules />

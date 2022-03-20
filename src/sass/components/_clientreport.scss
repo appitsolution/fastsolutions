@@ -1,40 +1,88 @@
-.clientreport {
-  padding: 96px 0;
-  &__head {
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 64px;
-    line-height: 72px;
-    letter-spacing: -0.02em;
-    margin-top: 16px;
-    margin-bottom: 96px;
-    color: rgba(76, 60, 144, 1);
-  }
-}
-.clientreportlist {
-  padding: 96px 0;
-  &__list {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    &-item {
+@media screen and(max-width: 480px) {
+  .clientreport {
+    padding: 96px 0;
+    &__head {
       font-family: Manrope;
       font-style: normal;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 32px;
-      text-align: center;
-      color: #4c3c90;
-      background: #edebf4;
-      border-radius: 96px;
-      padding: 20px 40px;
-      cursor: pointer;
-      transition: all 250ms linear;
-      &:hover {
-        background: #4c3c90;
-        color: #edebf4;
+      font-weight: 800;
+      font-size: 64px;
+      line-height: 72px;
+      letter-spacing: -0.02em;
+      margin-top: 16px;
+      margin-bottom: 96px;
+      color: rgba(76, 60, 144, 1);
+    }
+  }
+  .clientreportlist {
+    padding: 96px 0;
+    &__list {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      &-item {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        color: #4c3c90;
+        background: #edebf4;
+        border-radius: 96px;
+        padding: 20px 40px;
+        cursor: pointer;
+        transition: all 250ms linear;
+        &:hover {
+          background: #4c3c90;
+          color: #edebf4;
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width: 867px) {
+  .clientreport {
+    padding: 96px 0;
+    &__head {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 64px;
+      line-height: 72px;
+      letter-spacing: -0.02em;
+      margin-top: 16px;
+      margin-bottom: 96px;
+      color: rgba(76, 60, 144, 1);
+    }
+  }
+  .clientreportlist {
+    padding: 96px 0;
+    &__list {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      &-item {
+        width: calc((100% - 32px) / 4);
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        color: #4c3c90;
+        background: #edebf4;
+        border-radius: 96px;
+        padding: 20px 40px;
+        cursor: pointer;
+        transition: all 250ms linear;
+        &:hover {
+          background: #4c3c90;
+          color: #edebf4;
+        }
       }
     }
   }

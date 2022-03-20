@@ -2,6 +2,7 @@ import React from "react"
 import Container from "./Container"
 import DescTitle from "./DescTitle"
 import Slider2 from "./Slider2"
+import Parallax from "./Parallax"
 const arrayWord = [
   "Polskie Górnictwo Naftowe i Gazownictwo S.A.",
   "LIDL Sklepy Spożywcze sp. z o.o.",
@@ -63,17 +64,23 @@ const ClientReport = () => {
     <>
       <section className="clientreport">
         <Container>
-          <DescTitle>REFERENCJE</DescTitle>
-          <h1 className="clientreport__head">Marki, które nam zaufały</h1>
+          <Parallax position="left">
+            <DescTitle>REFERENCJE</DescTitle>
+            <h1 className="clientreport__head">Marki, które nam zaufały</h1>
+          </Parallax>
         </Container>
-        <Slider2 />
+        <Parallax position="right">
+          <Slider2 />
+        </Parallax>
       </section>
       <section className="clientreportlist">
-        <ul className="clientreportlist__list">
-          {arrayWord.map(num => (
-            <li className="clientreportlist__list-item">{num}</li>
-          ))}
-        </ul>
+        <Parallax position="left">
+          <ul className="clientreportlist__list">
+            {arrayWord.map(num => (
+              <li className="clientreportlist__list-item">{num}</li>
+            ))}
+          </ul>
+        </Parallax>
       </section>
     </>
   )

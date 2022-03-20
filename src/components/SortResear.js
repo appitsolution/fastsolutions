@@ -1,6 +1,7 @@
 import React from "react"
 import Container from "./Container"
 import buttonHidden from "../images/icon/block-hidden.svg"
+import Parallax from "./Parallax"
 const objectEL = [
   {
     word: "A",
@@ -154,32 +155,34 @@ const SortResear = () => {
   return (
     <section className="sortresear">
       <Container>
-        <ul className="sortresear__list">
-          {objectEL.map(num => (
-            <li className="sortresear__list-item">
-              <h2 className="sortresear__list-item-head">{num.word}</h2>
-              <ul className="sortresear__list-item-filter">
-                {num.listRequest.map(num => (
-                  <li className="sortresear__list-item-filter-item">
-                    <button
-                      className="sortresear__list-item-filter-item-button"
-                      onClick={openDescription}
-                    >
-                      {num.title}
-                      <img
-                        src={buttonHidden}
-                        className="sortresear__list-item-filter-item-button-img"
-                      />
-                    </button>
-                    <p className="sortresear__list-item-filter-item-description">
-                      {num.description}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
+        <Parallax position="top">
+          <ul className="sortresear__list">
+            {objectEL.map(num => (
+              <li className="sortresear__list-item">
+                <h2 className="sortresear__list-item-head">{num.word}</h2>
+                <ul className="sortresear__list-item-filter">
+                  {num.listRequest.map(num => (
+                    <li className="sortresear__list-item-filter-item">
+                      <button
+                        className="sortresear__list-item-filter-item-button"
+                        onClick={openDescription}
+                      >
+                        {num.title}
+                        <img
+                          src={buttonHidden}
+                          className="sortresear__list-item-filter-item-button-img"
+                        />
+                      </button>
+                      <p className="sortresear__list-item-filter-item-description">
+                        {num.description}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </Parallax>
       </Container>
     </section>
   )

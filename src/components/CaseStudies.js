@@ -2,6 +2,7 @@ import React from "react"
 import Container from "./Container"
 import DescTitle from "./DescTitle"
 import Offermark from "./Offermark"
+import Parallax from "./Parallax"
 const arrayCards = [
   {
     number: "01",
@@ -48,15 +49,19 @@ const CaseStudies = () => {
   return (
     <section className="casestudies">
       <Container>
-        <DescTitle>CASE STUDIES</DescTitle>
-        <h1 className="casestudies__head">Case Studies - Studia przypadku</h1>
-        <p className="casestudies__text">
-          Przykłady niektórych naszych dotychczasowych realizacji. Jesteśmy
-          przekonani, że niniejsze studia przypadku pomogą Państwu w
-          dokładniejszym zrozumieniu własnych potrzeb w zakresie badań i
-          marketingu.
-        </p>
-        <Offermark array={arrayCards} />
+        <Parallax position="left">
+          <DescTitle>CASE STUDIES</DescTitle>
+          <h1 className="casestudies__head">Case Studies - Studia przypadku</h1>
+          <p className="casestudies__text">
+            Przykłady niektórych naszych dotychczasowych realizacji. Jesteśmy
+            przekonani, że niniejsze studia przypadku pomogą Państwu w
+            dokładniejszym zrozumieniu własnych potrzeb w zakresie badań i
+            marketingu.
+          </p>
+        </Parallax>
+        <Parallax position="right">
+          <Offermark array={arrayCards} />
+        </Parallax>
       </Container>
     </section>
   )

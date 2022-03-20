@@ -14,7 +14,7 @@ const FeedbackMail = () => {
           <div className="feedback__content">
             <div className="feedback__information">
               <h1 className="feedback__information-head">
-                Dowiedz się jak
+                Dowiedz się jak{" "}
                 <span className="feedback__information-head-span">
                   wiele możesz zyskać!
                 </span>

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Header from "../components/Header"
 import Hero from "../components/Hero"
 import Informations from "../components/Informations"
@@ -8,6 +8,7 @@ import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
 import homeimg from "../images/homeimg.png"
 import "../sass/main.scss"
+
 const index = () => {
   return (
     <div data-is-root-path="true">
@@ -24,6 +25,7 @@ const index = () => {
       <AboutCompany />
       <Blog />
       <FeedbackMail />
+
       <Footer />
     </div>
   )
