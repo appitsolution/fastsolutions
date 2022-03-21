@@ -3,8 +3,8 @@ import Button from "./Button"
 import DescTitle from "./DescTitle"
 import Container from "./Container"
 import postImg1 from "../images/macbook.jpg"
-import postImg2 from "../images/meet.jpg"
-import postImg3 from "../images/graf.jpg"
+import postImg2 from "../images/meet.png"
+import postImg3 from "../images/graf.png"
 import Parallax from "./Parallax"
 
 const Blog = () => {

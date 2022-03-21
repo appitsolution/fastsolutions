@@ -6,6 +6,8 @@ import BadanieCommunity from "../components/BadanieCommunity"
 import Cubs from "../components/Cubs"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
+import smileImg from '../images/smile_man.png'
+
 const survey = () => {
   return (
     <>
@@ -16,6 +18,9 @@ const survey = () => {
         }
         buttons={["Wypełnij brief", "Skontaktuj się"]}
         widthEl={"557"}
+        img={smileImg}
+        widthImg={"37%"}
+        right={130}
       />
       <BadaniaContent />
       <Cubs />

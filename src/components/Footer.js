@@ -21,7 +21,7 @@ const Footer = () => {
     if (num < 0) {
       setPlus(true)
     }
-    plus ? setSuk(num + 0.01) : setSuk(num - 0.01)
+    plus ? setSuk(num + 0.2) : setSuk(num - 0.2)
   }, [num])
   return (
     <>

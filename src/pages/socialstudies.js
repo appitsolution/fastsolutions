@@ -6,6 +6,7 @@ import SocialTheme from "../components/SocialTheme"
 import Benefits from "../components/Benefits"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
+import groupImg from '../images/group_people.png'
 const socialstudies = () => {
   return (
     <>
@@ -16,6 +17,9 @@ const socialstudies = () => {
         }
         widthEl={"557"}
         buttons={["Wypełnij brief", "Skontaktuj się"]}
+        img={groupImg}
+        widthImg={"40%"}
+        right={140}
       />
       <SocialTheme
         title={"Z KIM WSPÓŁPRACUJEMY"}

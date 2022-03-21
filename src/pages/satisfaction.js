@@ -6,6 +6,7 @@ import Hero from "../components/Hero"
 import Offermark from "../components/Offermark"
 import Why from "../components/Why"
 import MethodAction from "./../components/MethodAction"
+import successImg from '../images/success.png'
 const arrayCards = [
   {
     number: "01",
@@ -54,6 +55,9 @@ const satisfaction = () => {
       <Hero
         title={"Czym dokładnie są badania satysfakcji klientów?"}
         buttons={["Wypełnij brief", "Skontaktuj się"]}
+        img={successImg}
+        widthImg={"30%"}
+        widthEl={400}
       />
       <Offermark
         nameDesc={"ZALETY"}

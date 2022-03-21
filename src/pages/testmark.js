@@ -54,6 +54,7 @@ const testmark = () => {
         widthEl="557"
         buttons={["Wypełnij brief", "Skontaktuj się"]}
         img={megafonImg}
+        widthImg={"40%"}
       />
 
       <Offermark

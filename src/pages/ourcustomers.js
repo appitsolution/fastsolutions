@@ -4,6 +4,7 @@ import Hero from "../components/Hero"
 import ClientReport from "../components/ClientReport"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
+import headImg from '../images/our_client.png'
 const ourcustomers = () => {
   return (
     <>
@@ -14,6 +15,8 @@ const ourcustomers = () => {
         }
         widthEl={"558"}
         buttons={["Wypełnij brief", "Skontaktuj się"]}
+        img={headImg}
+        widthImg={"40%"}
       />
       <ClientReport />
       <FeedbackMail />

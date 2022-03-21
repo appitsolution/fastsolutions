@@ -7,7 +7,7 @@ import callCalling from "../images/icon/call-calling.svg"
 import "../sass/main.scss"
 import ModalWindow from "./ModalWindow"
 
-const Hero = ({ title, widthEl, text, buttons, call, img }) => {
+const Hero = ({ title, widthEl, text, buttons, call, img, widthImg, right }) => {
   const openWindow = () => {
     document.querySelector(".backdrop").classList.add("active")
   }
@@ -20,7 +20,10 @@ const Hero = ({ title, widthEl, text, buttons, call, img }) => {
           {text === null ? null : (
             <p className="hero__block-mobile-description">{text}</p>
           )}
-          <img src={img} className="hero__block-mobile-img" alt="icon" />
+          {
+            img ? <img src={img} className="hero__block-mobile-img" alt="icon" /> : null
+          }
+          
           {buttons.length === 0 ? null : (
             <div className="hero__block-mobile-buttons">
               {buttons.map(num => (
@@ -77,7 +80,9 @@ const Hero = ({ title, widthEl, text, buttons, call, img }) => {
                 </div>
               )}
             </div>
-            <img src={img} alt="icon" className="hero__block-img" />
+            {img ? 
+            <img src={img} style={{width: widthImg ? widthImg : "70%", right: right ? right : 0}}  alt="icon" className="hero__block-img" />
+            : null}
           </div>
           <div className="hero__aside-left" id="aside-left">
             <img

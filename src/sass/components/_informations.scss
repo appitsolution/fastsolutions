@@ -188,9 +188,12 @@
         position: relative;
         background: #edebf4;
         padding: 32px;
-        min-width: 400px;
+        height: 400px;
+        // min-width: 400px;
         &-img {
           margin-bottom: 15px;
+          height: 70px;
+          width: auto;
         }
         &-head {
           font-family: Manrope;

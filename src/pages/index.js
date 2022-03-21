@@ -14,13 +14,14 @@ const index = () => {
     <div data-is-root-path="true">
       <Header />
       <Hero
-        title={"Kompleksowe badania marketingowe,rynkowe,społeczne"}
+        title={"Kompleksowe badania marketingowe, rynkowe, społeczne"}
         widthEl="343"
         text="Działamy na terenie całego kraju od 2011 roku."
         buttons={["Dowiedz się więcej"]}
         call={true}
         img={homeimg}
       />
+    
       <Informations />
       <AboutCompany />
       <Blog />
