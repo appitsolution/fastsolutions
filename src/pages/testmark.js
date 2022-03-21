@@ -28,7 +28,6 @@ const arrayCards = [
     number: "01",
     head: "Badania rynku",
     text: "Pozwalają na poznanie środowiska danej branży.",
-    blue: "active",
   },
   {
     number: "01",

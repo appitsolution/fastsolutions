@@ -6,7 +6,7 @@ import Hero from "../components/Hero"
 import Offermark from "../components/Offermark"
 import Why from "../components/Why"
 import MethodAction from "./../components/MethodAction"
-import successImg from '../images/success.png'
+import successImg from "../images/success.png"
 const arrayCards = [
   {
     number: "01",
@@ -27,7 +27,6 @@ const arrayCards = [
     number: "01",
     head: "Badania rynku",
     text: "Pozwalają na poznanie środowiska danej branży.",
-    blue: "active",
   },
   {
     number: "01",

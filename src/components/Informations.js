@@ -3,6 +3,7 @@ import Container from "./Container"
 import DescTitle from "./DescTitle"
 import Button from "./Button"
 import offer from "../images/icon/offer.svg"
+
 import planetimg from "../images/planetimg.png"
 import Slider2 from "./Slider2"
 import ChartComponent from "./ChartComponent"
@@ -13,40 +14,69 @@ const Informations = () => {
     <>
       <section className="informations">
         <Container>
-          <Parallax position="right">
-            <div className="informations__offer">
-              <ul className="informations__offer-list">
-                <li className="informations__offer-list-item">
-                  <DescTitle>OFERTA</DescTitle>
-                  <h1 className="informations__offer-head">
-                    Szukają Państwo{" "}
-                    <span className="informations__offer-head-span">
-                      skutecznych rozwiązań badawczych?
-                    </span>
-                  </h1>
-                  <p className="informations__offer-text">
-                    Zapraszamy do niezobowiązujących konsultacji z naszymi
-                    ekspertami.
-                  </p>
-                  <ul className="informations__offer-buttons">
-                    <li className="informations__offer-buttons-item">
-                      <Button>Wypełnij brief</Button>
-                    </li>
-                    <li className="informations__offer-buttons-item">
-                      <Button>Skontaktuj się</Button>
-                    </li>
-                  </ul>
-                </li>
-                <li className="informations__offer-list-item">
-                  <img
-                    className="informations__offer-list-item-img"
-                    src={offer}
-                    alt="offer"
-                  />
-                </li>
-              </ul>
-            </div>
-          </Parallax>
+          <div className="informations__offer">
+            <ul className="informations__offer-list">
+              <li className="informations__offer-list-item">
+                <DescTitle>OFERTA</DescTitle>
+                <h1 className="informations__offer-head">
+                  Szukają Państwo{" "}
+                  <span className="informations__offer-head-span">
+                    skutecznych rozwiązań badawczych?
+                  </span>
+                </h1>
+                <p className="informations__offer-text">
+                  Zapraszamy do niezobowiązujących konsultacji z naszymi
+                  ekspertami.
+                </p>
+                <ul className="informations__offer-buttons">
+                  <li className="informations__offer-buttons-item">
+                    <Button>Wypełnij brief</Button>
+                  </li>
+                  <li className="informations__offer-buttons-item">
+                    <Button>Skontaktuj się</Button>
+                  </li>
+                </ul>
+              </li>
+              <li className="informations__offer-list-item">
+                <ul className="informations__offer-list-item-offerlist">
+                  <li className="informations__offer-list-item-offerlist-item">
+                    <Parallax position="right">
+                      <p className="informations__offer-list-item-offerlist-item-text">
+                        Badania satysfakcji klientów
+                      </p>
+                    </Parallax>
+                  </li>
+                  <li className="informations__offer-list-item-offerlist-item">
+                    <Parallax position="left">
+                      <p className="informations__offer-list-item-offerlist-item-text">
+                        Badania marketingowe
+                      </p>
+                    </Parallax>
+                  </li>
+                  <li className="informations__offer-list-item-offerlist-item">
+                    <Parallax position="right">
+                      <p className="informations__offer-list-item-offerlist-item-text">
+                        Tajemniczy klient
+                      </p>
+                    </Parallax>
+                  </li>
+                  <li className="informations__offer-list-item-offerlist-item">
+                    <Parallax position="left">
+                      <p className="informations__offer-list-item-offerlist-item-text">
+                        Badania rynku i opinii
+                      </p>
+                    </Parallax>
+                  </li>
+                </ul>
+                <img
+                  className="informations__offer-list-item-img"
+                  src={offer}
+                  alt="offer"
+                />
+              </li>
+            </ul>
+          </div>
+
           <Parallax position="left">
             <div className="informations__team">
               <ul className="informations__offer-list">

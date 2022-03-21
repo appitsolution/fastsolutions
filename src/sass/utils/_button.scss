@@ -9,9 +9,9 @@
   line-height: 32px;
   text-align: right;
   letter-spacing: -0.02em;
-  color: #4c3c90;
+  background: #4c3c90;
   appearance: none;
-  background: #ffffff;
+  color: #ffffff;
   border: 2px solid #4c3c90;
   box-sizing: border-box;
   border-radius: 32px;
@@ -20,7 +20,7 @@
   cursor: pointer;
   transition: all 250ms linear;
   &:hover {
-    color: #ffffff;
-    background: #4c3c90;
+    background: #ffffff;
+    color: #4c3c90;
   }
 }

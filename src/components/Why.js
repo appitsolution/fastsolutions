@@ -1,7 +1,7 @@
 import React from "react"
 import Container from "./Container"
 import DescTitle from "./DescTitle"
-import phoneImg from "../images/phone.png"
+import phoneImg from "../images/phone.jpg"
 import Parallax from "./Parallax"
 const Why = ({ nameDesc, title, text }) => {
   return (

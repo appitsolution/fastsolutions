@@ -5,7 +5,7 @@ import ToFirma from "../components/ToFirma"
 import WhyNot from "../components/WhyNot"
 import Rules from "../components/Rules"
 import WeWork from "../components/WeWork"
-import flag from "../images/flag.jpg"
+import homeimg from "../images/homeimg.png"
 import Group from "../components/Group"
 import Footer from "../components/Footer"
 import FeedbackMail from "./../components/FeedbackMail"
@@ -14,13 +14,12 @@ const About = () => {
     <>
       <Header />
       <Hero
-        title="Agencja badawcza
-ABM Fast Solutions jest
-profesjonalną firmą badawczą działającą na terenie całego kraju."
-        widthEl={524}
-        buttons={["Wypełnij brief", "Skontaktuj się"]}
-        img={flag}
-        widthImg={"auto"}
+        title={"Kompleksowe badania marketingowe, rynkowe, społeczne"}
+        widthEl="343"
+        text="Działamy na terenie całego kraju od 2011 roku."
+        buttons={["Dowiedz się więcej"]}
+        call={true}
+        img={homeimg}
       />
       <ToFirma />
       <WhyNot />

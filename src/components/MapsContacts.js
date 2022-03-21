@@ -4,6 +4,7 @@ import Container from "../components/Container"
 import facebook2 from "../images/icon/facebook2.svg"
 import twiter2 from "../images/icon/twiter2.svg"
 import linkedIn2 from "../images/icon/linkedIn2.svg"
+
 import Rectangle2 from "../images/icon/Rectangle2.svg"
 import GoogleMapReact from "google-map-react"
 import iconMap from "../images/icon/map-icon.svg"

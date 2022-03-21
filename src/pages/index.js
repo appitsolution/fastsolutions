@@ -6,22 +6,23 @@ import AboutCompany from "../components/AboutCompany"
 import Blog from "../components/Blog"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
-import homeimg from "../images/homeimg.png"
+import flag from "../images/flag.jpg"
 import "../sass/main.scss"
 
 const index = () => {
   return (
     <div data-is-root-path="true">
       <Header />
+
       <Hero
-        title={"Kompleksowe badania marketingowe, rynkowe, społeczne"}
-        widthEl="343"
-        text="Działamy na terenie całego kraju od 2011 roku."
-        buttons={["Dowiedz się więcej"]}
-        call={true}
-        img={homeimg}
+        title="Agencja badawcza
+ABM Fast Solutions jest
+profesjonalną firmą badawczą działającą na terenie całego kraju."
+        widthEl={524}
+        buttons={["Wypełnij brief", "Skontaktuj się"]}
+        img={flag}
+        widthImg={"auto"}
       />
-    
       <Informations />
       <AboutCompany />
       <Blog />
