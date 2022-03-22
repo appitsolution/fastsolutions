@@ -10,11 +10,11 @@ import Parallax from "./Parallax"
 const Blog = () => {
   return (
     <>
-      <Parallax position="down">
-        <section className="blog">
-          <Container>
-            <ul className="blog__list">
-              <li className="blog__list-item">
+      <section className="blog">
+        <Container>
+          <ul className="blog__list">
+            <li className="blog__list-item">
+              <Parallax position="top">
                 <div className="blog__share">
                   <div className="blog__share-block">
                     <DescTitle>BLOG</DescTitle>
@@ -32,8 +32,10 @@ const Blog = () => {
                   </div>
                   <Button>Czytaj więcej</Button>
                 </div>
-              </li>
-              <li className="blog__list-item">
+              </Parallax>
+            </li>
+            <li className="blog__list-item">
+              <Parallax position="top">
                 <div className="blog__posts">
                   <ul className="blog__posts-list">
                     <li className="blog__posts-list-item">
@@ -113,11 +115,11 @@ const Blog = () => {
                     </li>
                   </ul>
                 </div>
-              </li>
-            </ul>
-          </Container>
-        </section>
-      </Parallax>
+              </Parallax>
+            </li>
+          </ul>
+        </Container>
+      </section>
     </>
   )
 }
