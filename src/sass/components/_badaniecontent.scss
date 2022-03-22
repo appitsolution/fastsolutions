@@ -94,3 +94,22 @@
     }
   }
 }
+
+.badaniecontent__end-image-svg{
+  &:hover{
+    cursor: pointer;
+
+    .background{
+      display: none;
+    }
+    .text{
+      fill: white;
+    }
+    .background-active{
+      display: block;
+    }
+  }
+  .background-active{
+    display: none;
+  }
+}
