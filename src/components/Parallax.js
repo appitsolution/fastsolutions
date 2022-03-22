@@ -8,7 +8,7 @@ import "aos/dist/aos.css"
 const Parallax = ({ position = "left", children }) => {
   useEffect(() => {
     AOS.init({
-      easing: "ease-out-cubic",
+      easing: "ease",
       once: true,
       offset: 50,
       delay: 50,
