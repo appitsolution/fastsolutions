@@ -95,21 +95,21 @@
   }
 }
 
-.badaniecontent__end-image-svg{
-  &:hover{
+.badaniecontent__end-image-svg {
+  &:hover {
     cursor: pointer;
 
-    .background{
+    .background {
       display: none;
     }
-    .text{
+    .text {
       fill: white;
     }
-    .background-active{
+    .background-active {
       display: block;
     }
   }
-  .background-active{
+  .background-active {
     display: none;
   }
 }
