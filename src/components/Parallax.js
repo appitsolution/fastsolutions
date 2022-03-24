@@ -13,7 +13,7 @@ const Parallax = ({ position = "left", children }) => {
       offset: 50,
       delay: 50,
     })
-  }, [])
+  })
 
   return (
     <div data-aos={`fade-${position}`} data-aos-anchor-placement="top-bottom">

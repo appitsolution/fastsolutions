@@ -9,7 +9,6 @@ const Group = () => {
   return (
     <section className="group">
       <Container>
-        <Parallax position="right">
           <DescTitle>GRUPA WW</DescTitle>
           <h1 className="group__head">Razem tworzymy jakość</h1>
           <ul className="group__list">
@@ -43,7 +42,6 @@ const Group = () => {
               </p>
             </li>
           </ul>
-        </Parallax>
       </Container>
     </section>
   )
