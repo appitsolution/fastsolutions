@@ -12,9 +12,9 @@ const AboutCompany = () => {
   return (
     <>
         <Container>
-          <Parallax>
-            <div className="aboutcompany__stats">
-              <DescTitle>O FIRMIE</DescTitle>
+          <div className="aboutcompany__stats">
+            <DescTitle>O FIRMIE</DescTitle>
+            <Parallax position="top">
               <ul className="aboutcompany__stats-list">
                 <li className="aboutcompany__stats-list-item">
                   <div className="aboutcompany__stats-list-item-block">
@@ -47,53 +47,50 @@ const AboutCompany = () => {
                   </div>
                 </li>
               </ul>
-            </div>
-          </Parallax>
-          <Parallax position="right">
-            <div className="aboutcompany__description">
-              <ul className="aboutcompany__description-list">
-                <li className="aboutcompany__description-list-item">
-                  <p className="aboutcompany__description-list-item-text">
-                    <span className="aboutcompany__description-list-item-text-span">
-                      Agencja Badawczo-Marketingowa FAST SOLUTIONS
-                    </span>{" "}
-                    jest profesjonalnym podmiotem badawczym wyspecjalizowanym w
-                    projektowaniu i realizacji skutecznych rozwiązań z zakresu
-                    badań rynku i opinii oraz analiz.
-                  </p>
-                  <p className="aboutcompany__description-list-item-text">
-                    Prowadzimy badania dla przedsiębiorstw z sektora MŚP, dużych
-                    korporacji i administracji państwowej oraz samorządowej.
-                    Nasze doświadczenie obejmuje ilościowe oraz jakościowe
-                    projekty badawcze wykonane dla takich firm jak{" "}
-                    <span className="aboutcompany__description-list-item-text-span">
-                      PGNiG, ARRIVA, LIDL, PREMIUM MOBILE, CEFARM, SANBank
-                    </span>{" "}
-                    i wielu innych.
-                  </p>
-                  <p className="aboutcompany__description-list-item-text">
-                    Dzięki wieloletniemu doświadczeniu i zespołowi skutecznych
-                    specjalistów, jesteśmy w stanie zaoferować Państwu
-                    rozwiązania szyte na miarę.
-                  </p>
-                </li>
-                <li className="aboutcompany__description-list-item">
-                  <p className="aboutcompany__description-list-item-testing">
-                    Badania to sztuka zadawania trafnych pytań właściwym
-                    ludziom.{" "}
-                    <span className="aboutcompany__description-list-item-text-span">
-                      Na tej sztuce znamy się bardzo dobrze!
-                    </span>
-                    <img
-                      className="aboutcompany__description-list-item-testing-img"
-                      src={RectanglTest}
-                      alt="rectangl"
-                    />
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </Parallax>
+            </Parallax>
+          </div>
+          <div className="aboutcompany__description">
+            <ul className="aboutcompany__description-list">
+              <li className="aboutcompany__description-list-item">
+                <p className="aboutcompany__description-list-item-text">
+                  <span className="aboutcompany__description-list-item-text-span">
+                    Agencja Badawczo-Marketingowa FAST SOLUTIONS
+                  </span>{" "}
+                  jest profesjonalnym podmiotem badawczym wyspecjalizowanym w
+                  projektowaniu i realizacji skutecznych rozwiązań z zakresu
+                  badań rynku i opinii oraz analiz.
+                </p>
+                <p className="aboutcompany__description-list-item-text">
+                  Prowadzimy badania dla przedsiębiorstw z sektora MŚP, dużych
+                  korporacji i administracji państwowej oraz samorządowej. Nasze
+                  doświadczenie obejmuje ilościowe oraz jakościowe projekty
+                  badawcze wykonane dla takich firm jak{" "}
+                  <span className="aboutcompany__description-list-item-text-span">
+                    PGNiG, ARRIVA, LIDL, PREMIUM MOBILE, CEFARM, SANBank
+                  </span>{" "}
+                  i wielu innych.
+                </p>
+                <p className="aboutcompany__description-list-item-text">
+                  Dzięki wieloletniemu doświadczeniu i zespołowi skutecznych
+                  specjalistów, jesteśmy w stanie zaoferować Państwu rozwiązania
+                  szyte na miarę.
+                </p>
+              </li>
+              <li className="aboutcompany__description-list-item">
+                <p className="aboutcompany__description-list-item-testing">
+                  Badania to sztuka zadawania trafnych pytań właściwym ludziom.{" "}
+                  <span className="aboutcompany__description-list-item-text-span">
+                    Na tej sztuce znamy się bardzo dobrze!
+                  </span>
+                  <img
+                    className="aboutcompany__description-list-item-testing-img"
+                    src={RectanglTest}
+                    alt="rectangl"
+                  />
+                </p>
+              </li>
+            </ul>
+          </div>
         </Container>
         <Parallax position="top">
           <Slider />
