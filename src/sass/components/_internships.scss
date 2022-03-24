@@ -1,3 +1,7 @@
+// TODO: кольори, розміри шрифтів, відступb, ніколи не робляться в ручну
+// створюється один файл де вони задані у вигляді костант і імортуються по файлам
+// таким чином код пишеться швидше і набагато простіше змінювати базіс
+
 @media screen and(max-width: 480px) {
   .internships {
     background: rgba(237, 235, 244, 1);
@@ -14,6 +18,7 @@
           font-weight: bold;
           font-size: 32px;
           line-height: 40px;
+          color: rgba(76, 60, 144, 1);
         }
         &-text {
           margin-top: 16px;
@@ -50,6 +55,11 @@
         background: #dbd8e9;
         border-radius: 96px;
         color: rgba(76, 60, 144, 1);
+        &:hover{
+          cursor: pointer;
+          color: white;
+          background: rgba(76, 60, 144, 1);
+        }
       }
     }
     &__button {
@@ -120,6 +130,7 @@
           font-size: 32px;
           line-height: 40px;
           text-align: justify;
+          color: rgba(76, 60, 144, 1);
         }
         &-text {
           margin-top: 16px;
@@ -158,6 +169,11 @@
         background: #dbd8e9;
         border-radius: 96px;
         color: rgba(76, 60, 144, 1);
+        &:hover{
+          cursor:pointer;
+          color: white;
+          background: rgba(76, 60, 144, 1);
+        }
       }
     }
     &__button {
@@ -187,12 +203,6 @@
           background: #ffffff;
           border: 2px solid #4c3c90;
           box-sizing: border-box;
-          box-shadow: 0px 38px 65px rgba(76, 60, 144, 0.38),
-            0px 24.6296px 38.0671px rgba(76, 60, 144, 0.288519),
-            0px 14.637px 20.7037px rgba(76, 60, 144, 0.230815),
-            0px 7.6px 10.5625px rgba(76, 60, 144, 0.19),
-            0px 3.0963px 5.2963px rgba(76, 60, 144, 0.149185),
-            0px 0.703704px 2.55787px rgba(76, 60, 144, 0.0914815);
           border-radius: 32px;
           display: flex;
           justify-content: center;
@@ -206,6 +216,17 @@
           width: 100%;
           color: rgba(76, 60, 144, 1);
           margin-top: 40px;
+          &:hover{
+            background: rgba(76, 60, 144, 1);
+            color: #ffffff;
+            cursor: pointer;
+            box-shadow: 0px 38px 65px rgba(76, 60, 144, 0.38),
+            0px 24.6296px 38.0671px rgba(76, 60, 144, 0.288519),
+            0px 14.637px 20.7037px rgba(76, 60, 144, 0.230815),
+            0px 7.6px 10.5625px rgba(76, 60, 144, 0.19),
+            0px 3.0963px 5.2963px rgba(76, 60, 144, 0.149185),
+            0px 0.703704px 2.55787px rgba(76, 60, 144, 0.0914815);
+          }
         }
       }
     }

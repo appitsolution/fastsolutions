@@ -11,7 +11,7 @@ const arrayCards = [
   },
   {
     head: "Ankieter terenowy",
-    active: true,
+    active: false,
   },
   {
     head: "Ankieter Telefoniczny",

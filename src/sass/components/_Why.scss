@@ -28,7 +28,7 @@
           letter-spacing: -0.02em;
           opacity: 0.75;
           margin-top: 16px;
-          color: #4c3c90;
+          color: #000;
           max-width: 544px;
           &-span {
             font-weight: 800;
@@ -70,15 +70,15 @@
           letter-spacing: -0.02em;
           opacity: 0.75;
           margin-top: 16px;
-          color: #4c3c90;
-          max-width: 544px;
+          color: #000;
+          // max-width: 724px;
           &-span {
             font-weight: 800;
           }
         }
-        &-img {
-          width: 100%;
-        }
+        // &-img {
+        //   width: 100%;
+        // }
       }
     }
   }

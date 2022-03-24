@@ -12,7 +12,6 @@ const arrayCards = [
   },
   {
     head: "Statystyk",
-    active: true,
   },
 ]
 const Workwithus = () => {

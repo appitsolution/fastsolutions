@@ -436,15 +436,15 @@ const MapsContacts = () => {
           <DescTitle>KONTAKT</DescTitle>
           <h1 className="contactslink__head">Pozostań z nami w kontakcie</h1>
           <ul className="contactslink__list">
-            <li className="contactslink__list-item">
+            <a href="https://www.facebook.com/AgencjaFastSolutions" className="contactslink__list-item">
               <img src={facebook2} className="contactslink__list-item-img" />
-            </li>
-            <li className="contactslink__list-item">
+            </a>
+            <a href="https://twitter.com/FASTSOLUTIONSpl" className="contactslink__list-item">
               <img src={twiter2} className="contactslink__list-item-img" />
-            </li>
-            <li className="contactslink__list-item">
+            </a>
+            <a href="https://www.linkedin.com/company/agencja-badawcza-fast-solutions/about/" className="contactslink__list-item">
               <img src={linkedIn2} className="contactslink__list-item-img" />
-            </li>
+            </a>
           </ul>
           <ul className="contactslink__notification">
             <li className="contactslink__notification-item">

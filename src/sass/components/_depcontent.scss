@@ -13,7 +13,7 @@
       font-weight: normal;
       font-size: 20px;
       line-height: 32px;
-      color: rgba(76, 60, 144, 1);
+      color: #000;
       margin-top: 24px;
     }
     &__head {
@@ -37,7 +37,7 @@
         font-weight: normal;
         font-size: 20px;
         line-height: 32px;
-        color: rgba(76, 60, 144, 1);
+        color: #000;
       }
     }
     &__mail {
@@ -80,7 +80,7 @@
             0px 3.0963px 5.2963px rgba(76, 60, 144, 0.149185),
             0px 0.703704px 2.55787px rgba(76, 60, 144, 0.0914815);
           border-radius: 32px;
-          margin-top: 12px;
+          margin-top: 32px;
           transition: all 250ms linear;
           &:hover {
             color: #4c3c90;
@@ -130,7 +130,7 @@
       font-size: 20px;
       line-height: 32px;
       text-align: justify;
-      color: rgba(76, 60, 144, 1);
+      color: #000;
       margin-top: 24px;
     }
     &__head {
@@ -156,7 +156,7 @@
         font-size: 20px;
         line-height: 32px;
         text-align: justify;
-        color: rgba(76, 60, 144, 1);
+        color: #000;
       }
     }
     &__mail {
@@ -197,7 +197,7 @@
             0px 3.0963px 5.2963px rgba(76, 60, 144, 0.149185),
             0px 0.703704px 2.55787px rgba(76, 60, 144, 0.0914815);
           border-radius: 32px;
-          margin-top: 12px;
+          margin-top: 32px;
           transition: all 250ms linear;
           &:hover {
             color: #4c3c90;

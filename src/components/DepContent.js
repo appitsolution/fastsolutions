@@ -129,9 +129,9 @@ const DepContent = () => {
                 rekrutacja@fastsolutions.pl
               </button>
             </li>
-            <li className="depcontent__mail-item">
+            {/* <li className="depcontent__mail-item">
               <button className="depcontent__mail-item-link">Powrót</button>
-            </li>
+            </li> */}
           </ul>
         </Parallax>
       </Container>

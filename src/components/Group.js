@@ -3,6 +3,7 @@ import Container from "./Container"
 import DescTitle from "./DescTitle"
 import grupaww from "../images/icon/grupaww.svg"
 import gorilla from "../images/icon/gorilla.svg"
+import gorillaActive from "../images/softgorillas.svg"
 import Parallax from "./Parallax"
 const Group = () => {
   return (
@@ -16,6 +17,11 @@ const Group = () => {
               <img
                 src={gorilla}
                 className="group__list-item-img"
+                alt="gorilla"
+              />
+              <img
+                src={gorillaActive}
+                className="group__list-item-img active"
                 alt="gorilla"
               />
               <h2 className="group__list-item-head">SOFT GORILLAS</h2>

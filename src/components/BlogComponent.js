@@ -3,8 +3,8 @@ import Container from "./Container"
 import DescTitle from "./DescTitle"
 import notebook from "../images/notebook.jpg"
 import avatar from "../images/avatar.png"
-import meetjob from "../images/meetjob.jpg"
-import tradegraph from "../images/tradegraph.jpg"
+import meetjob from "../images/meetjob.png"
+import tradegraph from "../images/tradegraph.png"
 import Parallax from "./Parallax"
 const BlogComponent = () => {
   return (

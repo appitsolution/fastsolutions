@@ -55,7 +55,7 @@ const Header = () => {
                     {num.label}
                   </Link>
                 ) : (
-                  <a className="navigation__link" src="">
+                  <a className="navigation__link" href={num.u}>
                     {num.label}
                     <div className="navigation__link-block">
                       <ul className="navigation__link-list">

@@ -8,7 +8,7 @@ import WeWork from "../components/WeWork"
 import homeimg from "../images/homeimg.png"
 import Group from "../components/Group"
 import Footer from "../components/Footer"
-import FeedbackMail from "./../components/FeedbackMail"
+import FeedbackMail from "../components/FeedbackMail"
 const About = () => {
   return (
     <>

@@ -1,76 +1,126 @@
 import React, { useEffect } from "react"
-import CountUp from "react-countup"
-import { Chart, registerables } from "chart.js"
-Chart.register(...registerables)
+import Highcharts from "highcharts"
+
 const ChartComponent = () => {
   useEffect(() => {
-    const ctx = document.getElementById("myChart")
-    new Chart(ctx, {
-      type: "doughnut",
-      data: {
-        labels: [
-          "Ankieter terenowy",
-          "Ankieter CATI",
-          "Audytor",
-          "Koordynator",
-          "Moderator",
-          "Transkrybent",
-        ],
-        datasets: [
+    var colors = ["#8d62a0", "#ceb3d8", "#d5dddd"]
+    var chart = new Highcharts.Chart(
+      {
+        chart: {
+          renderTo: "vacation-time-chart",
+          type: "pie",
+          height: 500,
+          width: 500,
+          borderRadius: 0,
+        },
+        credits: {
+          enabled: false,
+        },
+        title: false,
+        tooltip: {
+          followPointer: false,
+          followTouchMove:true,
+          headerFormat: '{point.key}: <b>{point.y}</b>',
+          pointFormat: ' ',
+          style: {
+            fontSize: "20px"
+          }
+        },
+        plotOptions: {
+          pie: {
+            borderWidth: 6,
+            startAngle: 90,
+            innerSize: "75%",
+            size: "100%",
+            dataLabels: false,
+            point: {
+              events: {
+                mouseOver: function () {
+                  this.series.chart.innerText.attr({ text: this.y })
+                },
+                mouseOut: function () {
+                  this.series.chart.innerText.attr({ text: 663 })
+                },
+              },
+            },
+          },
+        },
+
+        series: [
           {
-            label: "691",
-            backgroundColor: [
-              "rgba(76, 60, 144, 1)",
-              "rgba(237, 235, 244, 1)",
-              "rgba(219, 216, 233, 1)",
-              "rgba(183, 177, 211, 1)",
-              "rgba(148, 138, 188, 1)",
-              "rgba(112, 99, 166, 1)",
+            colorByPoint: true,
+            data: [
+              {
+                name: "Ankieter terenowy",
+                y: 105,
+              },
+              {
+                name: "Ankieter CATI",
+                y: 64,
+              },
+              {
+                name: "Audytor",
+                y: 445,
+              },
+              {
+                name: "Koordynator",
+                y: 33,
+              },
+              {
+                name: "Moderator",
+                y: 13,
+              },
+              {
+                name: "Transkrybent",
+                y: 44,
+              },
             ],
-            borderColor: "rgba(0,0,0,0.1)",
-            data: [105, 63, 446, 33, 13, 44],
           },
         ],
       },
-      options: {
-        borderWidth: 0,
-        weight: 1,
-        cutout: 170,
-        plugins: {
-          legend: {
-            display: false,
-          },
-          tooltip: {
-            backgroundColor: "#4c3c90",
-            titleColor: "#edebf4",
-            padding: "16",
-            titleFont: {
-              weight: "bold",
-              // size: 30,
-            },
-            bodyFont: {
-              size: 18,
-            },
-            displayColors: false,
-          },
-        },
-        scales: {
-          y: {
-            display: false,
-          },
-        },
-      },
-    })
+      function (chart) {
+        // on complete
+
+        var xpos = "50%"
+        var ypos = "53%"
+        var circleradius = 102
+
+        chart.innerText = chart.renderer
+          .text("663", 160, 270)
+          .css({
+            color: "#4C3C90",
+            fontSize: "106px",
+            textAlign: "center",
+            fontFamily: "Manrope",
+            fontWeight: 800,
+            textAlign: "center",
+          })
+          .attr({
+            zIndex: 999,
+          })
+          .add()
+      }
+    )
   }, [])
+
   return (
     <>
-      <div className="chart-canvas">
-        <canvas id="myChart"></canvas>
+      {/* <div className="chart-canvas"> */}
+        {/* <canvas id="myChart"></canvas>
         <h1 className="text-chart">
           <CountUp start={0} end={691} />
-        </h1>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        </h1> */}
+        {/* <HighchartsReact
+    highcharts={Highcharts}
+    options={options}
+  /> */}
+        <div
+          id="vacation-time-chart"
+          style={{ minWidth: "500px", height: "500px", margin: "0 auto" }}
+        ></div>
+      {/* </div> */}
+      {/* <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> */}
+      <script src="http://code.highcharts.com/highcharts.js"></script>
     </>
   )
 }

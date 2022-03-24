@@ -11,7 +11,6 @@ import Parallax from "./Parallax"
 const AboutCompany = () => {
   return (
     <>
-      <section className="aboutcompany">
         <Container>
           <Parallax>
             <div className="aboutcompany__stats">
@@ -99,7 +98,6 @@ const AboutCompany = () => {
         <Parallax position="top">
           <Slider />
         </Parallax>
-      </section>
     </>
   )
 }

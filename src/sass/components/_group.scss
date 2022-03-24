@@ -45,7 +45,7 @@
           font-weight: normal;
           font-size: 20px;
           line-height: 32px;
-          color: #4c3c90;
+          color: #000;
           text-align: center;
           letter-spacing: -0.02em;
           opacity: 0.75;
@@ -55,6 +55,9 @@
   }
 }
 @media screen and(min-width: 865px) {
+  .group__list-item-img.active{
+    display: none;
+  }
   .group {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -80,6 +83,15 @@
         background: #edebf4;
         padding: 40px 32px 32px 32px;
         max-width: 480px;
+        &:hover{
+          cursor: pointer;
+          .group__list-item-img{
+            display: none;
+          }
+          .group__list-item-img.active{
+            display: block;
+          }
+        }
         &-img {
           margin-bottom: 40px;
         }
@@ -100,7 +112,7 @@
           font-weight: normal;
           font-size: 20px;
           line-height: 32px;
-          color: #4c3c90;
+          color: #000;
           text-align: center;
           letter-spacing: -0.02em;
           opacity: 0.75;

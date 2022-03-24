@@ -5,7 +5,7 @@ import Header from "../components/Header"
 import Hero from "../components/Hero"
 import Offermark from "../components/Offermark"
 import Why from "../components/Why"
-import MethodAction from "./../components/MethodAction"
+import MethodAction from "../components/MethodAction"
 import successImg from "../images/success.png"
 const arrayCards = [
   {

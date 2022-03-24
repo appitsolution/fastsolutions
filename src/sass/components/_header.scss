@@ -185,7 +185,6 @@
         &-link {
           padding: 24px 0;
           display: block;
-          border-bottom: 1px solid #948abc;
           font-family: Manrope;
           font-style: normal;
           font-weight: 800;
@@ -193,6 +192,11 @@
           line-height: 16px;
           color: #4c3c90;
           letter-spacing: -0.02em;
+          border-bottom: 1px solid #948abc;
+          text-decoration: none;
+          &:hover{
+            text-decoration: underline;
+          }
         }
       }
     }

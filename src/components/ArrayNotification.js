@@ -18,14 +18,15 @@ const ArrayNotification = ({ array }) => {
           {num.text && (
             <p className="permanentteam__list-item-text">{num.text}</p>
           )}
-          {num.active ? (
+          {/* TODO: трикутники створюються нативно css, за допомогою бордерів, а не фото викачуються */}
+          {/* {num.active ? (
             <img
               src={RectanglTest}
               className="permanentteam__list-item-img-active"
             />
           ) : (
             <img src={Rectangle2} className="permanentteam__list-item-img" />
-          )}
+          )} */}
         </li>
       ))}
     </ul>

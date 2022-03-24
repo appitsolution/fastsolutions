@@ -1,29 +1,32 @@
 import React, { useEffect } from "react"
 import path5576 from "../images/icon/path5576.svg"
 import Rectangle2 from "../images/icon/Rectangle2.svg"
-import Swiper, { Navigation, Pagination, Scrollbar } from "swiper"
+import Swiper, { Autoplay, Navigation, Pagination, Scrollbar } from "swiper"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 const Slider = () => {
   useEffect(() => {
-    const swiper = new Swiper(".swiper", {
-      modules: [Navigation, Pagination, Scrollbar],
+    const swiper = new Swiper(".swiper-review", {
+      modules: [Navigation, Pagination, Autoplay],
       pagination: {
         el: ".swiper-pagination",
         type: "bullets",
         bulletElement: "button",
         clickable: true,
       },
-      speed: 500,
+      autoplay: {
+        delay: 3000
+      },
+      loop: true,
+      speed: 1500,
       slidesPerView: 4,
       spaceBetween: 32,
-      
     })
-  })
+  },[])
   return (
     <div className="aboutcompany__slider">
-      <div class="swiper">
+      <div class="swiper-review">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <li className="informations__reference-list-item">
@@ -39,7 +42,7 @@ const Slider = () => {
                 Firma dała się poznać jako solidna i godna zaufania. Warto odnotować również takie cechy jak bardzo dobry kontakt z klientem oraz elastyczność działania. 
               </p>
               <img
-                src={"https://fastsolutions.pl/wp-content/uploads/2017/03/solo.png"}
+                src={Rectangle2}
                 className="informations__reference-list-item-icon"
               />
             </li>

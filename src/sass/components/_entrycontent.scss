@@ -58,8 +58,9 @@
     margin-top: 48px;
     //   margin-bottom: 48px;
     max-width: 720px;
-    color: rgba(76, 60, 144, 1);
+    color: #000;
     &-head {
+      color: rgba(76, 60, 144, 1);
       font-family: Manrope;
       font-style: normal;
       font-weight: 800;
@@ -118,10 +119,10 @@
           font-weight: normal;
           font-size: 24px;
           line-height: 32px;
-
           opacity: 0.75;
         }
         &-second {
+          color: rgba(76, 60, 144, 1);
           margin-top: 37px;
           font-family: Manrope;
           font-style: normal;
@@ -148,8 +149,9 @@
     margin-top: 48px;
     //   margin-bottom: 48px;
     max-width: 720px;
-    color: rgba(76, 60, 144, 1);
+    color: #000;
     &-head {
+      color: rgba(76, 60, 144, 1);
       font-family: Manrope;
       font-style: normal;
       font-weight: 800;
@@ -159,6 +161,7 @@
       text-decoration-line: underline;
     }
     &-second {
+      color: rgba(76, 60, 144, 1);
       margin-top: 32px;
       font-family: Manrope;
       font-style: normal;

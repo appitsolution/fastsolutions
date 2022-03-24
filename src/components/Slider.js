@@ -26,7 +26,7 @@ const Slider = () => {
       slidesPerView: 2,
       spaceBetween: 32,
     })
-  })
+  }, [])
   return (
     <div className="aboutcompany__slider">
       <div class="swiper">
