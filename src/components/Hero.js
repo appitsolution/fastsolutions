@@ -19,6 +19,7 @@ const Hero = ({
 }) => {
   const openWindow = () => {
     document.querySelector(".backdrop").classList.add("active")
+    document.body.style="overflow-y: hidden;"
   }
   return (
     <section className="hero">
@@ -100,14 +101,14 @@ const Hero = ({
               />
             ) : null}
           </div>
-          <div className="hero__aside-left" id="aside-left">
+          {/* <div className="hero__aside-left" id="aside-left">
             <img
               className="hero__aside-left-icon"
               src={noteIcon}
               alt="noteicon"
             />
             Brief badawczy
-          </div>
+          </div> */}
           <button
             onClick={openWindow}
             className="hero__aside-right"

@@ -41,7 +41,7 @@ const Blog = () => {
                     <li className="blog__posts-list-item">
                       <div className="blog__posts-list-item-content">
                         <a
-                          href="#"
+                          href="/entry/"
                           className="blog__posts-list-item-content-head"
                         >
                           Opracowanie statystyczne wyników badań „od kuchni”
@@ -66,7 +66,7 @@ const Blog = () => {
                     <li className="blog__posts-list-item">
                       <div className="blog__posts-list-item-content">
                         <a
-                          href="#"
+                          href="/entry/"
                           className="blog__posts-list-item-content-head"
                         >
                           Opracowanie statystyczne wyników badań „od kuchni”
@@ -91,7 +91,7 @@ const Blog = () => {
                     <li className="blog__posts-list-item">
                       <div className="blog__posts-list-item-content">
                         <a
-                          href="#"
+                          href="/entry/"
                           className="blog__posts-list-item-content-head"
                         >
                           Opracowanie statystyczne wyników badań „od kuchni”

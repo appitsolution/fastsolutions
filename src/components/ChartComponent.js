@@ -3,7 +3,7 @@ import Highcharts from "highcharts"
 
 const ChartComponent = () => {
   useEffect(() => {
-    var colors = ["#8d62a0", "#ceb3d8", "#d5dddd"]
+    // var colors = ["#8d62a0", "#ceb3d8", "#d5dddd"]
     var chart = new Highcharts.Chart(
       {
         chart: {
@@ -13,6 +13,7 @@ const ChartComponent = () => {
           width: 500,
           borderRadius: 0,
         },
+        colors: ["#4C3C90", "#7063A6", "#948ABC", "#B7B1D3", "#DBD8E9", "#EDEBF4"],
         credits: {
           enabled: false,
         },
@@ -101,6 +102,7 @@ const ChartComponent = () => {
           .add()
       }
     )
+   
   }, [])
 
   return (
