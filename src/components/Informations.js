@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import Container from "./Container"
+import { Link } from "gatsby"
 import DescTitle from "./DescTitle"
 import Button from "./Button"
 import offer from "../images/icon/offer.svg"
@@ -12,6 +13,7 @@ import Parallax from "./Parallax"
 const Informations = () => {
   const openWindow = () => {
     document.querySelector(".backdrop").classList.add("active")
+    document.body.style = "overflow: hidden;"
   }
   return (
     <>
@@ -33,7 +35,9 @@ const Informations = () => {
                 </p>
                 <ul className="informations__offer-buttons">
                   <li className="informations__offer-buttons-item">
-                    <Button>Wypełnij brief</Button>
+                    <Link to="/brief" className="button">
+                      Wypełnij brief
+                    </Link>
                   </li>
                   <li className="informations__offer-buttons-item">
                     <button className="button" onClick={openWindow}>

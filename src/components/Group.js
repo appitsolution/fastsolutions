@@ -2,7 +2,7 @@ import React from "react"
 import Container from "./Container"
 import DescTitle from "./DescTitle"
 import grupaww from "../images/icon/grupaww.svg"
-import grupawwActive from "../images/icon/grupawwActive.png"
+import grupawwActive from "../images/icon/grupawwActive.svg"
 import gorilla from "../images/icon/gorilla.svg"
 import gorillaActive from "../images/softgorillas.svg"
 const Group = () => {

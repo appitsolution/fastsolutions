@@ -30,71 +30,69 @@ const Slider = () => {
   }, [])
   return (
     <div className="aboutcompany__slider">
-      <ParallaxY position="right">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                className="aboutcompany__slider-list-item-img"
-                src={slider1}
-                alt="office"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                className="aboutcompany__slider-list-item-img"
-                src={slider2}
-                alt="team"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                className="aboutcompany__slider-list-item-img"
-                src={slider3}
-                alt="office"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                className="aboutcompany__slider-list-item-img"
-                src={slider4}
-                alt="team"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                className="aboutcompany__slider-list-item-img"
-                src={slider5}
-                alt="team"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                className="aboutcompany__slider-list-item-img"
-                src={slider6}
-                alt="team"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                className="aboutcompany__slider-list-item-img"
-                src={slider7}
-                alt="team"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                className="aboutcompany__slider-list-item-img"
-                src={slider8}
-                alt="team"
-              />
-            </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
+              src={slider1}
+              alt="office"
+            />
           </div>
-          <div class="swiper-pagination"></div>
-
-          <div class="swiper-scrollbar"></div>
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
+              src={slider2}
+              alt="team"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
+              src={slider3}
+              alt="office"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
+              src={slider4}
+              alt="team"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
+              src={slider5}
+              alt="team"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
+              src={slider6}
+              alt="team"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
+              src={slider7}
+              alt="team"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              className="aboutcompany__slider-list-item-img"
+              src={slider8}
+              alt="team"
+            />
+          </div>
         </div>
-      </ParallaxY>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-scrollbar"></div>
+      </div>
     </div>
   )
 }

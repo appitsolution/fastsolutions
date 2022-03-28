@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Button from "./Button"
 import Container from "./Container"
 import noteIcon from "../images/icon/note.svg"
@@ -19,7 +20,7 @@ const Hero = ({
 }) => {
   const openWindow = () => {
     document.querySelector(".backdrop").classList.add("active")
-    document.body.style="overflow-y: hidden;"
+    document.body.style = "overflow-y: hidden;"
   }
   return (
     <section className="hero">
@@ -59,7 +60,7 @@ const Hero = ({
               Zadzwoń do nas!
             </button>
           )}
-          {/* <div className="hero__block-mobile-aside-left" id="aside-left">
+          <div className="hero__block-mobile-aside-left" id="aside-left">
             <img
               className="hero__block-mobile-aside-left-icon"
               src={noteIcon}
@@ -76,7 +77,7 @@ const Hero = ({
               />
               Napisz do nas!
             </div>
-          </div> */}
+          </div>
         </div>
         <div className="hero__block-desktop">
           <div className="hero__block">
@@ -95,7 +96,9 @@ const Hero = ({
                         {num}
                       </button>
                     ) : (
-                      <Button>{num}</Button>
+                      <Link to="/brief" className="button">
+                        {num}
+                      </Link>
                     )
                   )}
                 </div>
@@ -113,14 +116,14 @@ const Hero = ({
               />
             ) : null}
           </div>
-          {/* <div className="hero__aside-left" id="aside-left">
+          <Link to="/brief" className="hero__aside-left" id="aside-left">
             <img
               className="hero__aside-left-icon"
               src={noteIcon}
               alt="noteicon"
             />
             Brief badawczy
-          </div> */}
+          </Link>
           <button
             onClick={openWindow}
             className="hero__aside-right"

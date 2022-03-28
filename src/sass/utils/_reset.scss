@@ -1,5 +1,5 @@
-*{
-  transition: all .1s ease;
+* {
+  transition: all 0.1s ease;
 }
 
 body,
@@ -19,6 +19,10 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
+  text-decoration: none;
+}
+a {
+  color: black;
 }
 div#___gatsby {
   zoom: 0.8;
