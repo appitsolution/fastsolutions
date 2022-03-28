@@ -11,6 +11,7 @@ import Swiper, { Pagination } from "swiper"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
+import ParallaxY from "./ParallaxY"
 const Slider = () => {
   useEffect(() => {
     new Swiper(".swiper", {
@@ -29,69 +30,71 @@ const Slider = () => {
   }, [])
   return (
     <div className="aboutcompany__slider">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              className="aboutcompany__slider-list-item-img"
-              src={slider1}
-              alt="office"
-            />
+      <ParallaxY position="right">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                className="aboutcompany__slider-list-item-img"
+                src={slider1}
+                alt="office"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                className="aboutcompany__slider-list-item-img"
+                src={slider2}
+                alt="team"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                className="aboutcompany__slider-list-item-img"
+                src={slider3}
+                alt="office"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                className="aboutcompany__slider-list-item-img"
+                src={slider4}
+                alt="team"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                className="aboutcompany__slider-list-item-img"
+                src={slider5}
+                alt="team"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                className="aboutcompany__slider-list-item-img"
+                src={slider6}
+                alt="team"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                className="aboutcompany__slider-list-item-img"
+                src={slider7}
+                alt="team"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                className="aboutcompany__slider-list-item-img"
+                src={slider8}
+                alt="team"
+              />
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img
-              className="aboutcompany__slider-list-item-img"
-              src={slider2}
-              alt="team"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              className="aboutcompany__slider-list-item-img"
-              src={slider3}
-              alt="office"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              className="aboutcompany__slider-list-item-img"
-              src={slider4}
-              alt="team"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              className="aboutcompany__slider-list-item-img"
-              src={slider5}
-              alt="team"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              className="aboutcompany__slider-list-item-img"
-              src={slider6}
-              alt="team"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              className="aboutcompany__slider-list-item-img"
-              src={slider7}
-              alt="team"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              className="aboutcompany__slider-list-item-img"
-              src={slider8}
-              alt="team"
-            />
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
+          <div class="swiper-pagination"></div>
 
-        <div class="swiper-scrollbar"></div>
-      </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </ParallaxY>
     </div>
   )
 }

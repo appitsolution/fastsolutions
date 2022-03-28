@@ -2,12 +2,12 @@ import React from "react"
 import Container from "./Container"
 import DescTitle from "./DescTitle"
 import RectanglTest from "../images/icon/RectanglTest.svg"
-import Parallax from "./Parallax"
+import ParallaxY from "./ParallaxY"
 const WhyNot = () => {
   return (
     <section className="whynot">
       <Container>
-        <Parallax position="right">
+        <ParallaxY position="right">
           <div className="whynot__block">
             <div className="whynot__block-content">
               <DescTitle>DLACZEGO MY?</DescTitle>
@@ -53,7 +53,7 @@ const WhyNot = () => {
               </p>
             </div>
           </div>
-        </Parallax>
+        </ParallaxY>
       </Container>
     </section>
   )

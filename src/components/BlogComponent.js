@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Container from "./Container"
 import DescTitle from "./DescTitle"
 import notebook from "../images/notebook.jpg"
@@ -21,9 +22,12 @@ const BlogComponent = () => {
               </li>
               <li className="blogcomponent__info-list-item">
                 <DescTitle>BLOG</DescTitle>
-                <a href="#" className="blogcomponent__info-list-item-head">
+                <Link
+                  to="/entry"
+                  className="blogcomponent__info-list-item-head"
+                >
                   Opracowanie statystyczne wyników badań „od kuchni”
-                </a>
+                </Link>
                 <p className="blogcomponent__info-list-item-description">
                   Dlaczego opracowanie statystyczne wyników badań do prac
                   naukowych warto zlecić profesjonalistom? Opracowanie

@@ -1,20 +1,20 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Button from "./Button"
 import DescTitle from "./DescTitle"
 import Container from "./Container"
 import postImg1 from "../images/macbook.jpg"
 import postImg2 from "../images/meet.png"
 import postImg3 from "../images/graf.png"
-import Parallax from "./Parallax"
+import ParallaxY from "./ParallaxY"
 
 const Blog = () => {
   return (
     <>
       <section className="blog">
-        <Container>
-          <ul className="blog__list">
-            <li className="blog__list-item">
-              <Parallax position="top">
+        <ParallaxY position="right">
+          <Container>
+            <ul className="blog__list">
+              <li className="blog__list-item">
                 <div className="blog__share">
                   <div className="blog__share-block">
                     <DescTitle>BLOG</DescTitle>
@@ -32,10 +32,9 @@ const Blog = () => {
                   </div>
                   <Button>Czytaj więcej</Button>
                 </div>
-              </Parallax>
-            </li>
-            <li className="blog__list-item">
-              <Parallax position="top">
+              </li>
+
+              <li className="blog__list-item">
                 <div className="blog__posts">
                   <ul className="blog__posts-list">
                     <li className="blog__posts-list-item">
@@ -115,10 +114,10 @@ const Blog = () => {
                     </li>
                   </ul>
                 </div>
-              </Parallax>
-            </li>
-          </ul>
-        </Container>
+              </li>
+            </ul>
+          </Container>
+        </ParallaxY>
       </section>
     </>
   )

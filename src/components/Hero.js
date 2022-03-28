@@ -34,9 +34,15 @@ const Hero = ({
           ) : null}
           {buttons.length === 0 ? null : (
             <div className="hero__block-mobile-buttons">
-              {buttons.map(num => (
-                <Button>{num}</Button>
-              ))}
+              {buttons.map((num, index) =>
+                index === 1 ? (
+                  <button className="button" onClick={openWindow}>
+                    {num}
+                  </button>
+                ) : (
+                  <Button>{num}</Button>
+                )
+              )}
             </div>
           )}
           {call && (
@@ -82,9 +88,15 @@ const Hero = ({
               )}
               {buttons.length === 0 ? null : (
                 <div className="hero__info-buttons-list">
-                  {buttons.map(num => (
-                    <Button>{num}</Button>
-                  ))}
+                  {buttons.map((num, index) =>
+                    index === 1 ? (
+                      <button className="button" onClick={openWindow}>
+                        {num}
+                      </button>
+                    ) : (
+                      <Button>{num}</Button>
+                    )
+                  )}
                 </div>
               )}
             </div>

@@ -2,12 +2,12 @@ import React from "react"
 import RectanglTest from "../images/icon/RectanglTest.svg"
 import Container from "./Container"
 import DescTitle from "./DescTitle"
-import Parallax from "./Parallax"
+import ParallaxY from "./ParallaxY"
 const WeWork = () => {
   return (
     <section className="wework">
       <Container>
-        <Parallax position="left">
+        <ParallaxY position="left">
           <div className="wework__block">
             <p className="wework__block-text">
               Nasza firma badawcza oferuje{" "}
@@ -45,7 +45,7 @@ const WeWork = () => {
               </p>
             </div>
           </div>
-        </Parallax>
+        </ParallaxY>
       </Container>
     </section>
   )

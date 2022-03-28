@@ -6,12 +6,12 @@ import statusUp from "../images/icon/status-up.svg"
 import trade from "../images/icon/trade.svg"
 import Slider from "./Slider"
 import ChartComponent from "./ChartComponent"
-import Parallax from "./Parallax"
+import ParallaxY from "./ParallaxY"
 const ToFirma = () => {
   return (
     <section className="ofirma">
       <Container>
-        <Parallax position="right">
+        <ParallaxY position="right">
           <div className="ofirma__push">
             <ul className="ofirma__push-list">
               <li className="ofirma__push-list-item">
@@ -115,11 +115,9 @@ const ToFirma = () => {
               Klastra Firm Informatycznych Polski Wschodniej.{" "}
             </span>
           </p>
-        </Parallax>
+        </ParallaxY>
       </Container>
-      <Parallax position="left">
-        <Slider />
-      </Parallax>
+      <Slider />
     </section>
   )
 }

@@ -10,6 +10,9 @@ import ChartComponent from "./ChartComponent"
 import Parallax from "./Parallax"
 
 const Informations = () => {
+  const openWindow = () => {
+    document.querySelector(".backdrop").classList.add("active")
+  }
   return (
     <>
       <section className="informations">
@@ -33,7 +36,9 @@ const Informations = () => {
                     <Button>Wypełnij brief</Button>
                   </li>
                   <li className="informations__offer-buttons-item">
-                    <Button>Skontaktuj się</Button>
+                    <button className="button" onClick={openWindow}>
+                      Skontaktuj się
+                    </button>
                   </li>
                 </ul>
               </li>

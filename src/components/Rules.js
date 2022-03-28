@@ -2,12 +2,12 @@ import React from "react"
 import Container from "./Container"
 import DescTitle from "./DescTitle"
 import Rectangle2 from "../images/icon/Rectangle2.svg"
-import Parallax from "./Parallax"
+import ParallaxY from "./ParallaxY"
 const Rules = () => {
   return (
     <section className="rules">
       <Container>
-        <Parallax position="left">
+        <ParallaxY position="left">
           <DescTitle>ZASADY</DescTitle>
           <p className="rules__text">
             Jako doświadczona firma badawcza{" "}
@@ -36,9 +36,9 @@ const Rules = () => {
               />
             </li>
           </ul>
-        </Parallax>
+        </ParallaxY>
       </Container>
-      <Parallax position="top">
+      <ParallaxY position="left">
         <ul className="rules__list-message">
           <li className="rules__list-message-item">
             Stosujemy politykę uczciwej ceny
@@ -68,7 +68,7 @@ const Rules = () => {
             Dbamy o miłą atmosferę współpracy
           </li>
         </ul>
-      </Parallax>
+      </ParallaxY>
     </section>
   )
 }

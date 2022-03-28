@@ -1,0 +1,213 @@
+.briefstart {
+  padding: 97px 0;
+  &__head {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    margin-top: 15px;
+  }
+  &__text {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    opacity: 0.75;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+.briefend {
+  padding: 97px 0;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-img {
+      margin: 0 auto;
+      margin-bottom: 32px;
+      &-icon {
+        padding: 51px 44px;
+        border-radius: 50%;
+        background: #4c3c90;
+        border: 2px solid #4c3c90;
+        box-sizing: border-box;
+      }
+    }
+    &-head {
+      margin-bottom: 32px;
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      max-width: 777px;
+    }
+  }
+}
+.brief-list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+  &-item {
+    &-head {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.1em;
+    }
+    &-toomb {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: right;
+      opacity: 0.75;
+    }
+    &-text {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+
+      opacity: 0.75;
+    }
+  }
+}
+.brief-input {
+  width: 100%;
+  padding: 16px;
+  background: #edebf4;
+  border: 1px solid #7063a6;
+  box-sizing: border-box;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  &::placeholder {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.brief-button-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #4c3c90;
+  appearance: none;
+  background: #ffffff;
+  border: 2px solid #4c3c90;
+  box-sizing: border-box;
+  border-radius: 32px;
+  padding: 9px 20px;
+  width: 261px;
+  cursor: pointer;
+  transition: all 250ms linear;
+  &:hover {
+    color: #ffffff;
+    background: #4c3c90;
+  }
+}
+// LIST BRIEFS COMPONENTS
+.brief1 {
+  padding: 97px 0;
+  &-block1 {
+    margin-bottom: 64px;
+  }
+  &-block2 {
+    margin-bottom: 64px;
+  }
+  &-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.brief2 {
+  padding: 97px 0;
+  &-block1 {
+    margin-bottom: 64px;
+  }
+  &-block2 {
+    margin-bottom: 64px;
+  }
+  &-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.brief3 {
+  padding: 97px 0;
+  &-block1 {
+    margin-bottom: 64px;
+  }
+  &-block2 {
+    margin-bottom: 64px;
+  }
+  &-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.brief4 {
+  padding: 97px 0;
+  &-block1 {
+    margin-bottom: 64px;
+  }
+  &-block2 {
+    margin-bottom: 64px;
+  }
+  &-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.brief5 {
+  padding: 97px 0;
+  &-block1 {
+    margin-bottom: 64px;
+  }
+  &-block2 {
+    margin-bottom: 64px;
+  }
+  &-block3 {
+    margin-bottom: 64px;
+  }
+  &-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

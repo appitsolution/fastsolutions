@@ -1,0 +1,18 @@
+.parallaxyLeft {
+  opacity: 0;
+  transform: translateX(-100%) scaleX(1.5);
+  transition: all 1.2s ease-in-out 0.1s;
+}
+.parallaxyRight {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1.2s ease-in-out 0.1s;
+}
+.parallaxyLeft.active {
+  opacity: 1;
+  transform: translateX(0) scaleX(1);
+}
+.parallaxyRight.active {
+  opacity: 1;
+  transform: translateX(0) scaleX(1);
+}
