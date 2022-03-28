@@ -11,9 +11,15 @@ import ChartComponent from "./ChartComponent"
 import Parallax from "./Parallax"
 
 const Informations = () => {
+  function getBodyScrollTop()
+{
+return  (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop);
+}
   const openWindow = () => {
     document.querySelector(".backdrop").classList.add("active")
     document.body.style = "overflow: hidden;"
+    const num = 125 + +getBodyScrollTop().toFixed()
+    document.getElementById("popup").style.top= `${num}px`
   }
   return (
     <>

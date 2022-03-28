@@ -21,10 +21,12 @@ const Hero = ({
   const openWindow = () => {
     document.querySelector(".backdrop").classList.add("active")
     document.body.style = "overflow-y: hidden;"
+
   }
   return (
     <section className="hero">
       <ModalWindow />
+
       <Container>
         <div className="hero__block-mobile">
           <h2 className="hero__block-mobile-head">{title}</h2>

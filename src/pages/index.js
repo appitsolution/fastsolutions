@@ -8,12 +8,10 @@ import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
 import flag from "../images/flag.jpg"
 import "../sass/main.scss"
-
 const index = () => {
   return (
     <div data-is-root-path="true">
       <Header />
-
       <Hero
         title="Agencja badawcza
 ABM Fast Solutions jest
@@ -27,7 +25,6 @@ profesjonalną firmą badawczą działającą na terenie całego kraju."
       <AboutCompany />
       <Blog />
       <FeedbackMail />
-
       <Footer />
     </div>
   )

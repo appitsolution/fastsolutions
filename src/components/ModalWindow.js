@@ -8,7 +8,7 @@ const ModalWindow = () => {
     document.body.style="overflow-y: auto;"
   }
   return (
-    <div className={`backdrop`}>
+    <div className={`backdrop`} id="popup">
       <button onClick={closeWindow} className="backdrop-open-button">
         <img src={closeButton} className="backdrop-open-button-icon" />
       </button>
