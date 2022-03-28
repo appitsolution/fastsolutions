@@ -5,6 +5,7 @@ import closeButton from "../images/icon/closeButton.svg"
 const ModalWindow = () => {
   const closeWindow = () => {
     document.querySelector(".backdrop").classList.remove("active")
+    document.body.style="overflow-y: auto;"
   }
   return (
     <div className={`backdrop`}>

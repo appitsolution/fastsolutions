@@ -103,6 +103,9 @@
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
+      &-block{
+        margin-bottom: 80px;
+      }
       &-head {
         font-family: Manrope;
         font-style: normal;
