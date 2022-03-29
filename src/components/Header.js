@@ -55,7 +55,7 @@ const Header = () => {
                     {num.label}
                   </Link>
                 ) : (
-                  <a className="navigation__link" href={num.u}>
+                  <a className="navigation__link" href={num.label==="Oferty pracy" ? "/oferty-pracy" : "#"}>
                     {num.label}
                     <div className="navigation__link-block">
                       <ul className="navigation__link-list">

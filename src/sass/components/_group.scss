@@ -56,7 +56,7 @@
 }
 @media screen and(min-width: 865px) {
   .group__list-item-img.active{
-    display: none;
+    display: block;
   }
   .group {
     padding-top: 96px;
@@ -83,11 +83,9 @@
         background: #edebf4;
         padding: 40px 32px 32px 32px;
         max-width: 480px;
+        
         &:hover{
           cursor: pointer;
-          .group__list-item-img{
-            display: none;
-          }
           .group__list-item-img.active{
             display: block;
           }

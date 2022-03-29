@@ -105,7 +105,7 @@ const Footer = () => {
               <ul className="footer__information-feedback-list">
                 <li className="footer__information-feedback-list-item">
                   <Link
-                    to="/testmark"
+                    to="/badania-marketingowe"
                     className="footer__information-feedback-list-item-link"
                   >
                     Badania marketingowe
@@ -113,7 +113,7 @@ const Footer = () => {
                 </li>
                 <li className="footer__information-feedback-list-item">
                   <Link
-                    to="/socialstudies"
+                    to="/badania-spoleczne"
                     className="footer__information-feedback-list-item-link"
                   >
                     Badania społeczne
@@ -121,7 +121,7 @@ const Footer = () => {
                 </li>
                 <li className="footer__information-feedback-list-item">
                   <Link
-                    to="/misteriousclient"
+                    to="/tajemniczy-klient"
                     className="footer__information-feedback-list-item-link"
                   >
                     Tajemniczy Klient
@@ -139,7 +139,7 @@ const Footer = () => {
                 </li> */}
                 <li className="footer__information-feedback-list-item">
                   <Link
-                    to="/satisfaction"
+                    to="/badania-satysfakcji-klientow"
                     className="footer__information-feedback-list-item-link"
                   >
                     Badania satysfakcji klientów
@@ -147,7 +147,7 @@ const Footer = () => {
                 </li>
                 <li className="footer__information-feedback-list-item">
                   <Link
-                    to="/survey"
+                    to="/badanie-satysfakcji-pracownikow"
                     className="footer__information-feedback-list-item-link"
                   >
                     Badanie satysfakcji pracowników

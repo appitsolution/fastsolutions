@@ -13,7 +13,7 @@ const Group = () => {
         <h1 className="group__head">Razem tworzymy jakość</h1>
         <ul className="group__list">
           <li className="group__list-item">
-            <img src={gorilla} className="group__list-item-img" alt="gorilla" />
+            {/* <img src={gorilla} className="group__list-item-img" alt="gorilla" /> */}
             <img
               src={gorillaActive}
               className="group__list-item-img active"
@@ -26,7 +26,7 @@ const Group = () => {
             </p>
           </li>
           <li className="group__list-item">
-            <img src={grupaww} className="group__list-item-img" alt="grupaww" />
+            {/* <img src={grupaww} className="group__list-item-img" alt="grupaww" /> */}
             <img
               src={grupawwActive}
               className="group__list-item-img active"
