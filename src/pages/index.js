@@ -6,7 +6,7 @@ import AboutCompany from "../components/AboutCompany"
 import Blog from "../components/Blog"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
-import flag from "../images/client_img/fastsolutions-home-slider-5-min.jpg"
+import flag from "../images/flag.jpg"
 import "../sass/main.scss"
 const index = () => {
   return (
