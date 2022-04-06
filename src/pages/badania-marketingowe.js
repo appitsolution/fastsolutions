@@ -6,7 +6,7 @@ import Why from "../components/Why"
 import MethodAction from "../components/MethodAction"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
-import megafonImg from "../images/megafon.png"
+import megafonImg from "../images/client_img/fastsolutions-slide-3-min.jpg"
 import "../sass/main.scss"
 const arrayCards = [
   {
@@ -53,7 +53,7 @@ const testmark = () => {
         widthEl="557"
         buttons={["Wypełnij brief", "Skontaktuj się"]}
         img={megafonImg}
-        widthImg={"40%"}
+        widthImg={"100%"}
       />
 
       <Offermark

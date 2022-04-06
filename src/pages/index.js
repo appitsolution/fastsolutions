@@ -6,14 +6,14 @@ import AboutCompany from "../components/AboutCompany"
 import Blog from "../components/Blog"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
-import flag from "../images/flag.jpg"
+import flag from "../images/client_img/fastsolutions-home-slider-5-min.jpg"
 import "../sass/main.scss"
 const index = () => {
   return (
     <div data-is-root-path="true">
       <Header />
       <Hero
-        title="Agencja badawcza
+        title="Agencja badawcza`
 ABM Fast Solutions jest
 profesjonalną firmą badawczą działającą na terenie całego kraju."
         widthEl={524}

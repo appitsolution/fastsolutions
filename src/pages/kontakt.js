@@ -9,7 +9,7 @@ const contacts = () => {
   return (
     <>
       <Header />
-      <Hero title={"Kontakt"} buttons={[]} img={clientImg} />
+      <Hero title={"Kontakt"} buttons={[]}/>
       <MapsContacts />
       <FeedbackMail />
       <Footer />
