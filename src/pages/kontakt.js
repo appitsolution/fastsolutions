@@ -4,11 +4,12 @@ import Hero from "../components/Hero"
 import MapsContacts from "../components/MapsContacts"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
+import clientImg from '../images/client_img/header-kontatk-min.jpg'
 const contacts = () => {
   return (
     <>
       <Header />
-      <Hero title={"Kontakt"} buttons={[]} />
+      <Hero title={"Kontakt"} buttons={[]} img={clientImg} />
       <MapsContacts />
       <FeedbackMail />
       <Footer />

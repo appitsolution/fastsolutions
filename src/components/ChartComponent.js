@@ -9,8 +9,8 @@ const ChartComponent = () => {
         chart: {
           renderTo: "vacation-time-chart",
           type: "pie",
-          height: 500,
-          width: 500,
+          height: 450,
+          width: 450,
           borderRadius: 0,
         },
         colors: ["#4C3C90", "#7063A6", "#948ABC", "#B7B1D3", "#DBD8E9", "#EDEBF4"],
@@ -87,7 +87,7 @@ const ChartComponent = () => {
         var circleradius = 102
 
         chart.innerText = chart.renderer
-          .text("663", 160, 270)
+          .text("663", 130, 250)
           .css({
             color: "#4C3C90",
             fontSize: "106px",

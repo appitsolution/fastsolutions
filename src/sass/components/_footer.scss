@@ -6,10 +6,16 @@
       display: flex;
       gap: 130px;
       align-items: center;
+      justify-content: center;
       &-item {
         padding: 47px 0;
         text-align: center;
+        &-img{
+          width: 50%;
+          height: 60px;
+        }
       }
+
     }
   }
   .footer__information {

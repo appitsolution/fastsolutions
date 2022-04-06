@@ -42,3 +42,8 @@
 @import "./components/blogcomponent";
 @import "./components/entrycontent";
 @import "./components/brief";
+
+
+.swiper-review.swiper-initialized.swiper-horizontal.swiper-ios.swiper-backface-hidden {
+    overflow: hidden;
+}

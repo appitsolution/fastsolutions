@@ -7,15 +7,15 @@ import slider5 from "../images/slider5.jpg"
 import slider6 from "../images/slider6.jpg"
 import slider7 from "../images/slider7.jpg"
 import slider8 from "../images/slider8.jpg"
-import Swiper, { Pagination } from "swiper"
+import Swiper, { Pagination, Navigation } from "swiper"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 import ParallaxY from "./ParallaxY"
 const Slider = () => {
   useEffect(() => {
-    new Swiper(".swiper", {
-      modules: [Pagination],
+    const swiper2 = new Swiper(".swiper-logos", {
+      modules: [Pagination, Navigation],
       pagination: {
         el: ".swiper-pagination",
         type: "bullets",
@@ -26,11 +26,22 @@ const Slider = () => {
       speed: 500,
       slidesPerView: 2,
       spaceBetween: 32,
+      loop: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+      }
     })
   }, [])
   return (
-    <div className="aboutcompany__slider">
-      <div class="swiper">
+    <div>
+      <div class="swiper-logos">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img

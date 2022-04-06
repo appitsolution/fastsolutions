@@ -22,6 +22,20 @@ const Slider = () => {
       speed: 1500,
       slidesPerView: 4,
       spaceBetween: 32,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        980: {
+          slidesPerView: 4,
+          spaceBetween: 32
+        },
+      }
     })
   },[])
   return (
@@ -41,10 +55,10 @@ const Slider = () => {
               <p className="informations__reference-list-item-text">
                 Firma dała się poznać jako solidna i godna zaufania. Warto odnotować również takie cechy jak bardzo dobry kontakt z klientem oraz elastyczność działania. 
               </p>
-              <img
+              {/* <img
                 src={Rectangle2}
                 className="informations__reference-list-item-icon"
-              />
+              /> */}
             </li>
           </div>
           <div class="swiper-slide">
@@ -60,10 +74,10 @@ const Slider = () => {
               <p className="informations__reference-list-item-text">
               Z uwagi na fakt, iż wszystkie powierzone zadania wykonane były z zaangażowaniem i należytą starannością, bez obaw mogę zarekomendować usługi badawcze i doradcze Agencji Fast Solutions innym podmiotom.
               </p>
-              <img
+              {/* <img
                 src={Rectangle2}
                 className="informations__reference-list-item-icon"
-              />
+              /> */}
             </li>
           </div>
           <div class="swiper-slide">
@@ -79,10 +93,10 @@ const Slider = () => {
               <p className="informations__reference-list-item-text">
               Z uwagi na wysoką jakość wykonanego zlecenia z pełnym przekonaniem rekomendujemy usługi Agencji Badawczo-Marketingowej Fast Solutions, jako profesjonalnej i rzetelnej firmy badawczej o zasięgu ogólnopolskim, jednocześnie licząc na równie owocną współpracę w przyszłości.
               </p>
-              <img
+              {/* <img
                 src={Rectangle2}
                 className="informations__reference-list-item-icon"
-              />
+              /> */}
             </li>
           </div>
           <div class="swiper-slide">
@@ -98,10 +112,10 @@ const Slider = () => {
               <p className="informations__reference-list-item-text">
               Podkarpacki Urząd Wojewódzki w Rzeszowie zlecił agencji badawczo-marketingowej Fast Solutions przeprowadzenie badań opinii klientów nt. jakości obsługi i sprawności funkcjonowania Urzędu.
               </p>
-              <img
+              {/* <img
                 src={Rectangle2}
                 className="informations__reference-list-item-icon"
-              />
+              /> */}
             </li>
           </div>
           <div class="swiper-slide">
@@ -117,10 +131,10 @@ const Slider = () => {
               <p className="informations__reference-list-item-text">
               Zgodnie z naszymi oczekiwaniami analizie poddano wszelkie dane zgromadzone podczas przebiegu spotkania w każdej z grup fokusowych, w tym m.in. zapis audio i wideo. Rekomendujemy współpracę z Agencją Fast Solutions jako godnym zaufania, sprawdzonym partnerem do realizacji szeroko rozumianych badań marketingowych.
               </p>
-              <img
+              {/* <img
                 src={Rectangle2}
                 className="informations__reference-list-item-icon"
-              />
+              /> */}
             </li>
           </div>
           <div class="swiper-slide">
@@ -136,10 +150,10 @@ const Slider = () => {
               <p className="informations__reference-list-item-text">
               Polecam agencję, jako solidną i wiarygodną firmę badawczą. Wysoko oceniam wiedzę merytoryczną i sprawność organizacyjną osób odpowiedzialnych za realizację badań dla PUP w Rzeszowie.
               </p>
-              <img
+              {/* <img
                 src={Rectangle2}
                 className="informations__reference-list-item-icon"
-              />
+              /> */}
             </li>
           </div>
 
