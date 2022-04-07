@@ -30,10 +30,26 @@ const Slider = () => {
       slidesPerView: 2,
       spaceBetween: 32,
       loop: true,
+      slidesPerView: 4,
+      spaceBetween: 32,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        980: {
+          slidesPerView: 4,
+          spaceBetween: 32
+        },
+      }
     })
   }, [])
   return (
-    <div>
+    <div className="aboutcompany">
       <div class="swiper-logos">
         <div class="swiper-wrapper">
           <div class="swiper-slide">

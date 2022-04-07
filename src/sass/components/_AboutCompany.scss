@@ -3,6 +3,8 @@
     background: #edebf4;
     padding-top: 96px;
     padding-bottom: 96px;
+    position: relative;
+    overflow: hidden;
     &__stats {
       &-list {
         
@@ -128,7 +130,7 @@
     padding-bottom: 40px !important;
   }
   .swiper-pagination {
-    top: 104%;
+    top: 94%;
 }
   .swiper-pagination-bullet {
     width: 16px !important;
@@ -144,6 +146,7 @@
     background: #edebf4;
     padding-top: 96px;
     padding-bottom: 96px;
+    position: relative;
     &__stats {
       &-list {
         display: flex;
