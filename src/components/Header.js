@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import logo from "../images/icon/Logo.svg"
 import imgBottom from "../images/icon/arrow-bottom.svg"
@@ -35,11 +35,14 @@ const Header = () => {
     setOpenEl(!openEl)
     if (!openEl) {
       document.querySelector("body").style.overflowY = "hidden"
-      console.dir(document.querySelector("#__getsby"))
     } else {
       document.querySelector("body").style.overflowY = "auto"
     }
   }
+
+  useEffect(()=>{
+    document.querySelector("body").style.overflowY = "auto"
+  },[])
   return (
     <>
       <header className="header">

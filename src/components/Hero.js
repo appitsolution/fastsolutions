@@ -16,11 +16,12 @@ const Hero = ({
   call,
   img,
   widthImg,
+  heightImg,
   right,
 }) => {
   const openWindow = () => {
     document.querySelector(".backdrop").classList.add("active")
-    document.body.style = "overflow-y: hidden;"
+    document.body.style = "overflow: hidden;"
 
   }
   return (
@@ -112,6 +113,7 @@ const Hero = ({
                 style={{
                   width: widthImg ? widthImg : "70%",
                   right: right ? right : 0,
+                  height: heightImg ? heightImg : "auto"
                 }}
                 alt="icon"
                 className="hero__block-img"

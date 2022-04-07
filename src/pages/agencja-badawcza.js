@@ -20,6 +20,7 @@ const About = () => {
         buttons={["Dowiedz się więcej"]}
         call={true}
         img={homeimg}
+        heightImg={"120%"}
       />
       <ToFirma />
       <WhyNot />

@@ -81,6 +81,7 @@
   .informations__reference {
     position: relative;
     margin-top: 140px;
+    overflow: hidden;
     &-absolute {
       display: none;
     }
