@@ -7,15 +7,15 @@ import slider5 from "../images/slider5.jpg"
 import slider6 from "../images/slider6.jpg"
 import slider7 from "../images/slider7.jpg"
 import slider8 from "../images/slider8.jpg"
-import Swiper, { Pagination, Navigation } from "swiper"
+import Swiper, { Pagination, Autoplay } from "swiper"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 import ParallaxY from "./ParallaxY"
 const Slider = () => {
   useEffect(() => {
-    const swiper2 = new Swiper(".swiper-logos", {
-      modules: [Pagination, Navigation],
+    new Swiper(".swiper-logos", {
+      modules: [Pagination, Autoplay],
       pagination: {
         el: ".swiper-pagination",
         type: "bullets",
@@ -23,20 +23,13 @@ const Slider = () => {
         clickable: true,
         // dynamicBullets: true,
       },
+      autoplay: {
+        delay: 3000,
+      },
       speed: 500,
       slidesPerView: 2,
       spaceBetween: 32,
       loop: true,
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 0
-        },
-        480: {
-          slidesPerView: 1,
-          spaceBetween: 10
-        },
-      }
     })
   }, [])
   return (
