@@ -6,7 +6,7 @@ import Why from "../components/Why"
 import MethodAction from "../components/MethodAction"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
-import megafonImg from "../images/client_img/fastsolutions-home-slider-5-min.jpg"
+import megafonImg from "../images/badania-marketingow.jpg"
 import "../sass/main.scss"
 const arrayCards = [
   {

@@ -7,7 +7,7 @@ import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
 import ClientContent from "../components/ClientContent"
 // import imgclient from "../images/imgclient.png"
-import imgclient from "../images/client_img/header-kontatk-min.jpg"
+import imgclient from "../images/tajemniczy-klient.jpg"
 
 const textWhy = `Realizujemy zarówno audyty tajemniczy klient obejmujące scenariusze dla klientów będących osobami fizycznymi jak i te wizyty, których scenariusz zakłada udział klienta biznesowego (w trakcie wizyty audytor podaje dane prowadzonej przez siebie prawdziwej działalności gospodarczej z danej branży). 
 

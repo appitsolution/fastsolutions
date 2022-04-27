@@ -6,7 +6,7 @@ import Hero from "../components/Hero"
 import Offermark from "../components/Offermark"
 import Why from "../components/Why"
 import MethodAction from "../components/MethodAction"
-import successImg from "../images/client_img/fastsolutions-slide-4-min.jpg"
+import successImg from "../images/badania-satysfakcji-klientow.jpg"
 const arrayCards = [
   {
     number: "01",

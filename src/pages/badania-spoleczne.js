@@ -6,7 +6,7 @@ import SocialTheme from "../components/SocialTheme"
 import Benefits from "../components/Benefits"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
-import groupImg from '../images/group_people.png'
+import groupImg from "../images/badania-spoleczne.jpg"
 const socialstudies = () => {
   return (
     <>

@@ -6,7 +6,7 @@ import Internships from "../components/Internships"
 import Workwithus from "../components/Workwithus"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
-import headerImg from '../images/client_img/header-kontatk-min.jpg'
+import headerImg from "../images/oferty-pracy.jpg"
 const joboffers = () => {
   return (
     <>

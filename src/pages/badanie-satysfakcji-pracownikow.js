@@ -6,7 +6,7 @@ import BadanieCommunity from "../components/BadanieCommunity"
 import Cubs from "../components/Cubs"
 import FeedbackMail from "../components/FeedbackMail"
 import Footer from "../components/Footer"
-import smileImg from '../images/client_img/Badania-satysfakcji-pracownikow.png'
+import smileImg from "../images/badanie-satysfakcji-pracownikow.jpg"
 
 const survey = () => {
   return (
