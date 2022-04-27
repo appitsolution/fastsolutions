@@ -21,8 +21,7 @@ const fieldwork = () => {
         widthEl={"557"}
         buttons={["Wypełnij brief", "Skontaktuj się"]}
         img={coordImg}
-        widthImg={"42%"}
-        
+        widthImg={"100%"}
       />
       <WorkProcess />
       <Why

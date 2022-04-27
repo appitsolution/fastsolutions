@@ -16,7 +16,7 @@ const ourcustomers = () => {
         widthEl={"558"}
         buttons={["Wypełnij brief", "Skontaktuj się"]}
         img={headImg}
-        widthImg={"40%"}
+        widthImg={"100%"}
       />
       <ClientReport />
       <FeedbackMail />

@@ -33,6 +33,7 @@ const misteriousclient = () => {
         buttons={["Wypełnij brief", "Skontaktuj się"]}
         img={imgclient}
         widthImg={"100%"}
+        // heightImg={"350px"}
       />
       <ClientContent
         title={"KIM JEST TAJEMNCZY KLIENT?"}

@@ -19,8 +19,7 @@ const survey = () => {
         buttons={["Wypełnij brief", "Skontaktuj się"]}
         widthEl={"557"}
         img={smileImg}
-        widthImg={"37%"}
-        right={130}
+        widthImg={"100%"}
       />
       <BadaniaContent />
       <Cubs />

@@ -55,7 +55,7 @@ const satisfaction = () => {
         title={"Czym dokładnie są badania satysfakcji klientów?"}
         buttons={["Wypełnij brief", "Skontaktuj się"]}
         img={successImg}
-        widthImg={"50%"}
+        widthImg={"100%"}
         widthEl={400}
       />
       <Offermark

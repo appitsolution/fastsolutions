@@ -18,8 +18,7 @@ const socialstudies = () => {
         widthEl={"557"}
         buttons={["Wypełnij brief", "Skontaktuj się"]}
         img={groupImg}
-        widthImg={"40%"}
-        right={140}
+        widthImg={"100%"}
       />
       <SocialTheme
         title={"Z KIM WSPÓŁPRACUJEMY"}
