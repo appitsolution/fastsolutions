@@ -98,6 +98,9 @@ const Footer = () => {
                 <li className="footer__information-contacts-list-item">
                   0000413554, NIP: 8133671625, REGON: 180821757
                 </li>
+                <li className="footer__information-contacts-list-item">
+                  Biuro w Warszawie ul. Młynarska 46
+                </li>
               </ul>
             </div>
             <div className="footer__information-feedback">
@@ -203,7 +206,7 @@ const Footer = () => {
                     to="/polityka-prywatnosci"
                     className="footer__information-navigation-list-item-link"
                   >
-                     Polityka prywatności
+                    Polityka prywatności
                   </Link>
                 </li>
                 <li className="footer__information-navigation-list-item">
@@ -211,7 +214,7 @@ const Footer = () => {
                     to="/rodo-dane-osobowe-w-badaniach"
                     className="footer__information-navigation-list-item-link"
                   >
-                     RODO – Dane osobowe w badaniach
+                    RODO – Dane osobowe w badaniach
                   </Link>
                 </li>
                 <li className="footer__information-navigation-list-item">
@@ -228,7 +231,10 @@ const Footer = () => {
               <h1 className="footer__information-links-head">Śledź nas</h1>
               <ul className="footer__information-links-list">
                 <li className="footer__information-links-list-item">
-                  <a href="https://www.facebook.com/AgencjaFastSolutions" target="_blank">
+                  <a
+                    href="https://www.facebook.com/AgencjaFastSolutions"
+                    target="_blank"
+                  >
                     <img
                       src={facebook}
                       className="footer__information-links-list-item-img"
@@ -244,7 +250,10 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="footer__information-links-list-item">
-                  <a href="https://www.linkedin.com/company/agencja-badawcza-fast-solutions/about/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/company/agencja-badawcza-fast-solutions/about/"
+                    target="_blank"
+                  >
                     <img
                       src={linkedin}
                       className="footer__information-links-list-item-img"
@@ -257,8 +266,9 @@ const Footer = () => {
         </Container>
         <div className="footer__private">
           <p className="footer__private-text">
-            Copyright © 2022. Pagepress || SoftGorillas . Wszystkie prawa
-            zastrzeżone.
+            Copyright © 2022. <a href="https://pagepress.pl/">Pagepress</a> ||
+            <a href="https://www.softgorillas.com/">SoftGorillas</a> . Wszystkie
+            prawa zastrzeżone.
           </p>
         </div>
       </section>

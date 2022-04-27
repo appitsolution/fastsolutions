@@ -43,7 +43,8 @@
     &-buttons {
       display: flex;
       justify-content: center;
-      margin-top: 10px;
+      flex-wrap: wrap;
+      gap: 10px;
     }
     &-aside-right-button {
       display: flex;

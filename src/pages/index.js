@@ -22,7 +22,7 @@ profesjonalną firmą badawczą działającą na terenie całego kraju."
         widthImg={"auto"}
       />
       <Informations />
-      <AboutCompany />
+      {/* <AboutCompany /> */}
       <Blog />
       <FeedbackMail />
       <Footer />

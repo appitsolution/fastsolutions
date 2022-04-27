@@ -8,18 +8,24 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+      gap: 120px;
       &-item {
         &-offerlist {
-          display: none;
-          // display: flex;
+          display: flex;
           gap: 54px;
           flex-wrap: wrap;
           max-width: 405px;
           position: relative;
           align-items: flex-end;
           z-index: 10;
+          margin: 0 auto;
+          justify-content: center;
           &-item {
             width: calc((100% - 54px) / 2);
+            display: flex;
+            &:nth-child(odd) .informations__offer-list-item-offerlist-item-text {
+              text-align: right;
+            }
             &-text {
               font-family: "Manrope";
               font-style: normal;
@@ -33,11 +39,10 @@
           }
         }
         &-img {
-          display: none;
           position: absolute;
           top: 0;
           left: 0;
-          transform: translateY(-50%);
+          transform: translate(7%,-24%);
         }
       }
       &-item:last-child {
@@ -141,6 +146,9 @@
         }
       }
     }
+  }
+  .informations__team {
+    display: none;
   }
 }
 @media screen and(min-width: 865px) {
