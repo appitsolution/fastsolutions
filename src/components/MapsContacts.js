@@ -436,13 +436,22 @@ const MapsContacts = () => {
           <DescTitle>KONTAKT</DescTitle>
           <h1 className="contactslink__head">Pozostań z nami w kontakcie</h1>
           <ul className="contactslink__list">
-            <a href="https://www.facebook.com/AgencjaFastSolutions" className="contactslink__list-item">
+            <a
+              href="https://www.facebook.com/AgencjaFastSolutions"
+              className="contactslink__list-item"
+            >
               <img src={facebook2} className="contactslink__list-item-img" />
             </a>
-            <a href="https://twitter.com/FASTSOLUTIONSpl" className="contactslink__list-item">
+            <a
+              href="https://twitter.com/FASTSOLUTIONSpl"
+              className="contactslink__list-item"
+            >
               <img src={twiter2} className="contactslink__list-item-img" />
             </a>
-            <a href="https://www.linkedin.com/company/agencja-badawcza-fast-solutions/about/" className="contactslink__list-item">
+            <a
+              href="https://www.linkedin.com/company/agencja-badawcza-fast-solutions/about/"
+              className="contactslink__list-item"
+            >
               <img src={linkedIn2} className="contactslink__list-item-img" />
             </a>
           </ul>
@@ -488,7 +497,9 @@ const MapsContacts = () => {
                 <br />
                 Sąd Rejonowy dla m. Rzeszowa XII Wydział Gospodarczy KRS
                 <br />
-                KRS 0000413554, NIP: 813-367-16-25, REGON: 180 821 757
+                KRS 0000413554, NIP: 813-367-16-25, REGON: 180 821 757 Biuro w
+                <br />
+                Warszawie ul. Młynarska 46
               </p>
               <img
                 src={Rectangle2}
