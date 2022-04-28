@@ -59,28 +59,32 @@ const Informations = () => {
                   <li className="informations__offer-list-item-offerlist-item">
                     <Parallax position="right">
                       <p className="informations__offer-list-item-offerlist-item-text">
-                        Badania satysfakcji klientów
+                        <Link to="/badania-satysfakcji-klientow">
+                          Badania satysfakcji klientów
+                        </Link>
                       </p>
                     </Parallax>
                   </li>
                   <li className="informations__offer-list-item-offerlist-item">
                     <Parallax position="left">
                       <p className="informations__offer-list-item-offerlist-item-text">
-                        Badania marketingowe
+                        <Link to="/badania-marketingowe">
+                          Badania marketingowe
+                        </Link>
                       </p>
                     </Parallax>
                   </li>
                   <li className="informations__offer-list-item-offerlist-item">
                     <Parallax position="right">
                       <p className="informations__offer-list-item-offerlist-item-text">
-                        Tajemniczy klient
+                        <Link to="/tajemniczy-klient">Tajemniczy klient</Link>
                       </p>
                     </Parallax>
                   </li>
                   <li className="informations__offer-list-item-offerlist-item">
                     <Parallax position="left">
                       <p className="informations__offer-list-item-offerlist-item-text">
-                        Badania rynku i opinii
+                        <Link to="/badania-marketingowe">Badania rynku i opinii</Link>
                       </p>
                     </Parallax>
                   </li>
