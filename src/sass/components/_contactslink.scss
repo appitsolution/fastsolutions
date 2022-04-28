@@ -2,6 +2,10 @@
   .mapscontacts {
     width: 100%;
     height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 140px;
   }
   .contactslink {
     padding: 96px 0;
@@ -86,6 +90,8 @@
   .mapscontacts {
     width: 100%;
     height: 500px;
+    display: flex;
+    gap: 20px;
   }
   .contactslink {
     padding: 96px 0;
@@ -178,6 +184,7 @@
   justify-content: center;
   width: 322px;
   margin-left: -105px;
+
   &-logo {
     position: relative;
     display: flex;
@@ -185,10 +192,12 @@
     align-items: center;
     background: rgba(76, 60, 144, 1);
     padding: 30px;
+
     &-img {
       width: 41px;
       height: 44px;
     }
+
     &-icon {
       position: absolute;
       top: 100%;
@@ -196,10 +205,12 @@
       transform: translateX(-50%);
     }
   }
+
   &-text {
     background: #edebf4;
     width: 217px;
     padding: 16px;
+
     &-head {
       color: rgba(76, 60, 144, 1);
       font-family: Manrope;
@@ -209,6 +220,63 @@
       line-height: 24px;
       letter-spacing: -0.02em;
     }
+
+    &-description {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: -0.02em;
+      color: rgba(76, 60, 144, 1);
+      width: 130px;
+    }
+  }
+}
+.map__point2 {
+  // padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 335px;
+  margin-left: -105px;
+
+  &-logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(76, 60, 144, 1);
+    padding: 30px;
+
+    &-img {
+      width: 41px;
+      height: 44px;
+    }
+
+    &-icon {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &-text {
+    background: #edebf4;
+    width: 217px;
+    padding: 13px 20px;
+
+    &-head {
+      color: rgba(76, 60, 144, 1);
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+    }
+
     &-description {
       font-family: Manrope;
       font-style: normal;
