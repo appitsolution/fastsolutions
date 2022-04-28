@@ -22,7 +22,6 @@ const Hero = ({
   const openWindow = () => {
     document.querySelector(".backdrop").classList.add("active")
     document.body.style = "overflow: hidden;"
-
   }
   return (
     <section className="hero">
@@ -63,23 +62,30 @@ const Hero = ({
               Zadzwoń do nas!
             </button>
           )}
-          <div className="hero__block-mobile-aside-left" id="aside-left">
-            <img
-              className="hero__block-mobile-aside-left-icon"
-              src={noteIcon}
-              alt="noteicon"
-            />
-            Brief badawczy
-          </div>
-          <div className="hero__block-mobile-aside-right-toomb">
-            <div className="hero__block-mobile-aside-right" id="aside-right">
+          <Link to="/brief">
+            <div className="hero__block-mobile-aside-left" id="aside-left">
               <img
-                className="hero__block-mobile-aside-right-icon"
-                src={smsIcon}
-                alt="smsicon"
+                className="hero__block-mobile-aside-left-icon"
+                src={noteIcon}
+                alt="noteicon"
               />
-              Napisz do nas!
+              Brief badawczy
             </div>
+          </Link>
+          <div className="hero__block-mobile-aside-right-toomb">
+            <button
+              onClick={openWindow}
+              style={{ border: "none", background: "none" }}
+            >
+              <div className="hero__block-mobile-aside-right" id="aside-right">
+                <img
+                  className="hero__block-mobile-aside-right-icon"
+                  src={smsIcon}
+                  alt="smsicon"
+                />
+                Napisz do nas!
+              </div>
+            </button>
           </div>
         </div>
         <div className="hero__block-desktop">
@@ -113,7 +119,7 @@ const Hero = ({
                 style={{
                   width: widthImg ? widthImg : "70%",
                   right: right ? right : 0,
-                  height: heightImg ? heightImg : "auto"
+                  height: heightImg ? heightImg : "auto",
                 }}
                 alt="icon"
                 className="hero__block-img"
